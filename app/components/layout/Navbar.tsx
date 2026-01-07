@@ -164,7 +164,7 @@ export const Navbar = memo(function Navbar() {
             ))}
           </div>
 
-          <div className="hidden lg:flex gap-3 items-center">
+          <div className="hidden lg:flex gap-2 items-center">
             <LanguageSwitcher />
             <CurrencySwitcher />
             <Button variant="outline" size="sm">{tCommon('getStarted')}</Button>
