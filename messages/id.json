@@ -1,0 +1,678 @@
+{
+  "common": {
+    "appName": "Apane",
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "close": "Tutup",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "save": "Simpan",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "search": "Cari",
+    "submit": "Kirim",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya",
+    "learnMore": "Tonton Video",
+    "getStarted": "Unduh Aplikasi",
+    "readMore": "Baca Selengkapnya",
+    "signIn": "Masuk",
+    "signOut": "Keluar",
+    "signUp": "Daftar",
+    "welcome": "Selamat Datang",
+    "viewAll": "Lihat Semua Produk",
+    "startInvesting": "Mulai Berinvestasi",
+    "talkToExpert": "Bicara dengan Ahli",
+    "getStartedFree": "Mulai Gratis"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "contact": "Kontak",
+    "dashboard": "Dashboard",
+    "mutualFunds": "Reksa Dana",
+    "insurance": "Asuransi",
+    "loans": "Pinjaman",
+    "login": "Masuk"
+  },
+  "hero": {
+    "trustedBy": "Dipercaya oleh 2M+ Investor",
+    "title": "Investasi dengan Percaya Diri untuk Masa Depan Anda",
+    "subtitle": "Mulai perjalanan membangun kekayaan Anda dengan platform investasi paling terpercaya di India.",
+    "cta": "Mulai Berinvestasi",
+    "learnMore": "Tonton Video",
+    "happyInvestors": "Investor Senang",
+    "assetsManaged": "Aset Dikelola",
+    "securePlatform": "Platform Aman",
+    "mock": {
+      "greeting": "Selamat Pagi",
+      "userName": "Nekshan",
+      "totalInvestmentLabel": "Total Investasi",
+      "thisMonth": "Bulan Ini",
+      "actions": {
+        "invest": "Investasi",
+        "sip": "SIP",
+        "insurance": "Asuransi",
+        "more": "Lainnya"
+      },
+      "fundName": "HDFC Top 100",
+      "fundType": "Dana Large Cap",
+      "fundReturnLabel": "Imbal Hasil 1 Thn",
+      "portfolioUpTitle": "Portofolio Naik",
+      "secureTitle": "100% Aman",
+      "secureSubtitle": "Keamanan tingkat bank"
+    }
+  },
+  "calculator": {
+    "tag": "Kalkulator SIP Gratis",
+    "title": "Kalkulator SIP",
+    "heading": "Rencanakan Perjalanan Kekayaan Anda",
+    "description": "Hitung berapa banyak investasi SIP Anda dapat tumbuh seiring waktu. Mulai merencanakan tujuan keuangan Anda hari ini.",
+    "enterDetails": "Masukkan Detail Anda",
+    "monthlyInvestment": "Investasi Bulanan",
+    "expectedReturn": "Pengembalian yang Diharapkan (per tahun)",
+    "timePeriod": "Periode Waktu",
+    "years": "Tahun",
+    "calculate": "Hitung",
+    "totalInvestment": "Total Investasi",
+    "estimatedReturns": "Perkiraan Pengembalian",
+    "totalValue": "Nilai Total",
+    "investmentBreakdown": "Rincian Investasi",
+    "invested": "Diinvestasikan",
+    "returns": "Pengembalian",
+    "investedPct": "Diinvestasikan {percent}%",
+    "returnsPct": "Pengembalian {percent}%",
+    "startSIPNow": "Mulai SIP Sekarang",
+    "sipGrowth": "SIP {amount}/bulan Anda dapat tumbuh dalam {years} tahun",
+    "minMonthlyInvestmentLabel": "₹500",
+    "maxMonthlyInvestmentLabel": "₹1,00,000",
+    "minExpectedReturnLabel": "1%",
+    "maxExpectedReturnLabel": "30%",
+    "minTimePeriodLabel": "1 Tahun",
+    "maxTimePeriodLabel": "40 Tahun"
+  },
+  "features": {
+    "tag": "Mengapa Memilih Kami",
+    "title": "Untuk Mengembangkan Kekayaan Anda",
+    "titleHighlight": "Semua yang Anda Butuhkan",
+    "subtitle": "Ekosistem investasi lengkap yang dirancang untuk investor modern. Sederhana, aman, dan cerdas.",
+    "smartInvestments": "Investasi Cerdas",
+    "smartInvestmentsDesc": "Akses ke 5000+ reksa dana dengan rekomendasi ahli yang disesuaikan dengan tujuan Anda.",
+    "comprehensiveInsurance": "Asuransi Komprehensif",
+    "comprehensiveInsuranceDesc": "Lindungi apa yang penting dengan asuransi kesehatan, jiwa, berjangka, dan kendaraan.",
+    "portfolioAnalytics": "Analitik Portofolio",
+    "portfolioAnalyticsDesc": "Lacak investasi Anda dengan grafik yang indah dan wawasan real-time.",
+    "mobileFirst": "Pengalaman Mobile-First",
+    "mobileFirstDesc": "Investasi saat bepergian dengan aplikasi mobile kami yang intuitif dan ramah pengguna.",
+    "instantProcessing": "Pemrosesan Instan",
+    "instantProcessingDesc": "Verifikasi KYC cepat dan pemrosesan investasi instan.",
+    "securePayments": "Pembayaran Aman",
+    "securePaymentsDesc": "Beberapa opsi pembayaran dengan enkripsi keamanan tingkat bank.",
+    "learnMore": "Pelajari Lebih Lanjut"
+  },
+  "products": {
+    "tag": "Produk Kami",
+    "title": "Investasi dan Perlindungan,",
+    "titleHighlight": "Semua dalam Satu",
+    "subtitle": "Dari pembangunan kekayaan hingga perlindungan hidup, kami memiliki rangkaian produk keuangan yang komprehensif.",
+    "mutualFunds": "Reksa Dana",
+    "mutualFundsDesc": "Bangun kekayaan dengan portofolio investasi yang terdiversifikasi. Pilih dari dana ekuitas, utang, dan hibrida.",
+    "fundsAvailable": "Dana Tersedia",
+    "minInvestment": "Investasi Minimum",
+    "perMonth": "/bulan",
+    "healthInsurance": "Asuransi Kesehatan",
+    "healthInsuranceDesc": "Cakupan kesehatan komprehensif untuk Anda dan keluarga Anda. Klaim tanpa uang tunai di 10.000+ rumah sakit.",
+    "networkHospitals": "Rumah Sakit Jaringan",
+    "claimsSettled": "Klaim Diselesaikan",
+    "termInsurance": "Asuransi Berjangka",
+    "termInsuranceDesc": "Amankan masa depan keluarga Anda dengan rencana asuransi jiwa berjangka yang terjangkau.",
+    "coverageUpto": "Cakupan Hingga",
+    "startingAt": "Mulai Dari",
+    "motorInsurance": "Asuransi Kendaraan",
+    "motorInsuranceDesc": "Asuransi mobil dan motor komprehensif dengan penerbitan polis instan.",
+    "cashlessGarages": "Bengkel Tanpa Uang Tunai",
+    "claimSupport": "Dukungan Klaim",
+    "explore": "Jelajahi"
+  },
+  "trust": {
+    "tag": "Kepercayaan dan Keamanan",
+    "title": "Investasi Anda",
+    "titleHighlight": "Aman Bersama Kami",
+    "subtitle": "Kami diatur oleh otoritas keuangan terkemuka di India dan menggunakan langkah-langkah keamanan terdepan di industri untuk melindungi investasi Anda.",
+    "sebiRegistered": "Terdaftar SEBI",
+    "sebiDesc": "Penasihat Investasi Terotoritasasi",
+    "irdaiLicensed": "Lisensi IRDAI",
+    "irdaiDesc": "Broker Asuransi Berlisensi",
+    "bankGradeSecurity": "Keamanan Tingkat Bank",
+    "bankGradeSecurityDesc": "Enkripsi SSL 256-bit",
+    "isoCertified": "Bersertifikat ISO",
+    "isoCertifiedDesc": "Bersertifikat Keamanan Informasi",
+    "trustedPartners": "Mitra Terpercaya dan Rumah Dana"
+  },
+  "testimonials": {
+    "tag": "Testimoni",
+    "title": "Disukai oleh",
+    "titleHighlight": "20 Lakh+",
+    "titleEnd": "Investor",
+    "subtitle": "Jangan hanya percaya kata-kata kami. Inilah yang dikatakan investor kami.",
+    "testimonial1": "Memulai perjalanan investasi saya tahun lalu. Aplikasi ini sangat mudah digunakan, dan saya sudah melihat pengembalian yang luar biasa pada SIP saya!",
+    "testimonial1Name": "Priya Sharma",
+    "testimonial1Role": "Insinyur Perangkat Lunak",
+    "testimonial2": "Platform terbaik untuk reksa dana. Alat penelitian dan rekomendasi dana telah membantu saya membangun portofolio yang terdiversifikasi dengan percaya diri.",
+    "testimonial2Name": "Rajesh Kumar",
+    "testimonial2Role": "Pemilik Bisnis",
+    "testimonial3": "Mendapat asuransi kesehatan saya melalui mereka. Proses klaimnya lancar, dan dukungan pelanggan mereka luar biasa.",
+    "testimonial3Name": "Anita Desai",
+    "testimonial3Role": "Dokter"
+  },
+  "appDownload": {
+    "tag": "Peringkat 4.8 di App Store",
+    "title": "Unduh",
+
+    "titleEnd": "Aplikasi",
+    "subtitle": "Bergabunglah dengan jutaan investor cerdas. Mulai perjalanan investasi Anda dari hanya ₹100. Tersedia di iOS dan Android.",
+    "feature1": "Investasi Satu Ketukan",
+    "feature2": "Pelacakan Portofolio Real-Time",
+    "feature3": "Verifikasi KYC Instan",
+    "feature4": "Login Biometrik Aman",
+    "feature5": "Dukungan Pelanggan 24/7",
+    "feature6": "Nol Dokumen Kertas",
+    "downloadOn": "Unduh di",
+    "appStore": "App Store",
+    "getItOn": "Dapatkan di",
+    "googlePlay": "Google Play",
+    "portfolioValue": "Nilai Portofolio"
+  },
+  "cta": {
+    "tag": "Mulai Hanya dengan {amount}",
+    "title": "Siap Memulai Perjalanan Investasi Anda?",
+    "subtitle": "Bergabunglah dengan jutaan investor cerdas yang mempercayai kami. Unduh aplikasi sekarang dan mulai dalam waktu kurang dari 5 menit.",
+    "getStarted": "Mulai Gratis",
+    "talkToExpert": "Bicara dengan Ahli"
+  },
+  "footer": {
+    "description": "Mitra terpercaya Anda untuk manajemen kekayaan dan solusi investasi",
+    "quickLinks": "Tautan Cepat",
+    "products": "Produk",
+    "support": "Dukungan",
+    "legal": "Hukum",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan",
+    "contact": "Hubungi Kami",
+    "faq": "FAQ",
+    "rights": "Semua Hak Dilindungi"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Membangun Kekayaan untuk Masa Depan yang Lebih Baik",
+    "description": "Kami berkomitmen untuk membantu Anda mencapai tujuan keuangan melalui strategi investasi cerdas dan panduan ahli."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Hubungi Tim Kami",
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Telepon",
+    "message": "Pesan",
+    "send": "Kirim Pesan",
+    "address": "Alamat",
+    "callUs": "Hubungi Kami",
+    "emailUs": "Email Kami"
+  },  "mutualFundsPage": {
+    "tag": "Investasi",
+    "title": "Dana",
+    "titleHighlight": "Reksa",
+    "subtitle": "Berinvestasi dalam dana reksa dengan performa terbaik dari rumah dana terkemuka India. Mulai SIP Anda hanya dengan ₹100.",
+    "startSIP": "Mulai SIP",
+    "calculateReturns": "Hitung Pengembalian",
+    "fundsAvailable": "Dana Tersedia",
+    "minInvestment": "Investasi Minimum",
+    "partners": "Mitra",
+    "avgReturns": "Pengembalian Rata-Rata",
+    "searchPlaceholder": "Cari dana reksa...",
+    "filters": "Filter",
+    "returns1Y": "Pengembalian 1 Tahun",
+    "returns3Y": "Pengembalian 3 Tahun",
+    "returns5Y": "Pengembalian 5 Tahun",
+    "details": "Detail",
+    "invest": "Investasi",
+    "learnTitle": "Pelajari Tentang Dana Reksa",
+    "learnSubtitle": "Baru dalam investasi? Pahami dasar-dasar sebelum memulai.",
+    "topic1Title": "Apa itu Dana Reksa?",
+    "topic1Desc": "Dana investasi yang dikelola secara profesional yang mengumpulkan uang dari berbagai investor.",
+    "topic2Title": "SIP vs Lumpsum",
+    "topic2Desc": "Pahami perbedaan antara investasi terencana dan investasi sekaligus.",
+    "topic3Title": "Jenis Dana",
+    "topic3Desc": "Pahami kategori dana Ekuitas, Utang, Hybrid, dan lainnya.",
+    "readMore": "Baca Selengkapnya",
+    "appTitle": "Investasi Saat Bepergian",
+    "appSubtitle": "Unduh aplikasi kami untuk pengalaman investasi yang mulus",
+    "downloadApp": "Unduh Aplikasi"
+  },
+  "insurancePage": {
+    "tag": "Perlindungan",
+    "title": "Asuransi",
+    "titleHighlight": "Solusi",
+    "subtitle": "Lindungi apa yang paling penting dengan rencana asuransi komprehensif. Dari kesehatan hingga kehidupan, kami melindungi Anda.",
+    "getQuote": "Dapatkan Penawaran",
+    "comparePlans": "Bandingkan Rencana",
+    "choose": "Pilih",
+    "coverage": "Cakupan",
+    "chooseDesc": "Bandingkan rencana dan temukan perlindungan sempurna untuk kebutuhan Anda",
+    "coverageLabel": "Cakupan",
+    "startingAt": "Mulai dari",
+    "viewPlans": "Lihat Rencana",
+    "partners": "Bermitra dengan perusahaan asuransi terkemuka India",
+    "appTitle": "Dapatkan Asuransi dalam Menit",
+    "appDesc": "Unduh aplikasi kami untuk penerbitan polis instan",
+    "downloadApp": "Unduh Aplikasi",
+    "health": {
+      "name": "Asuransi Kesehatan",
+      "tagline": "Cakupan medis lengkap",
+      "desc": "Cakupan kesehatan komprehensif untuk Anda dan keluarga Anda.",
+      "feature1": "Rawat inap tanpa biaya",
+      "feature2": "Sebelum dan sesudah rawat inap",
+      "feature3": "Prosedur perawatan siang hari",
+      "feature4": "Bonus tidak ada klaim",
+      "feature5": "Pemeriksaan kesehatan gratis",
+      "perMonth": "/bulan"
+    },
+    "term": {
+      "name": "Asuransi Istilah",
+      "tagline": "Amankan masa depan keluarga Anda",
+      "desc": "Paket asuransi jiwa istilah terjangkau.",
+      "feature1": "Uang pertanggungan tinggi",
+      "feature2": "Premi terjangkau",
+      "feature3": "Manfaat pajak di bawah 80C",
+      "feature4": "Cakupan penyakit kritis",
+      "feature5": "Manfaat kematian kecelakaan",
+      "perMonth": "/bulan"
+    },
+    "motor": {
+      "name": "Asuransi Motor",
+      "tagline": "Berkendara dengan percaya diri",
+      "desc": "Asuransi mobil dan kendaraan roda dua komprehensif.",
+      "feature1": "Cakupan kerusakan sendiri",
+      "feature2": "Tanggung jawab pihak ketiga",
+      "feature3": "Cakupan kecelakaan pribadi",
+      "feature4": "Bantuan pinggir jalan",
+      "feature5": "Perbaikan tanpa biaya",
+      "coverage": "Komprehensif",
+      "perYear": "/tahun"
+    },
+    "travel": {
+      "name": "Asuransi Perjalanan",
+      "tagline": "Bepergian tanpa khawatir",
+      "desc": "Perlindungan perjalanan global.",
+      "feature1": "Cakupan medis di luar negeri",
+      "feature2": "Pembatalan perjalanan",
+      "feature3": "Klaim bagasi hilang",
+      "feature4": "Cakupan penundaan penerbangan",
+      "feature5": "Bantuan 24/7",
+      "coverage": "Cakupan Global",
+      "perTrip": "/perjalanan"
+    },
+    "why": {
+      "protection": {
+        "title": "Perlindungan Keuangan",
+        "desc": "Lindungi keluarga Anda dari beban keuangan yang tak terduga."
+      },
+      "peace": {
+        "title": "Ketenangan Pikiran",
+        "desc": "Hidup tanpa khawatir mengetahui Anda dan orang-orang terkasih dilindungi."
+      },
+      "asset": {
+        "title": "Perlindungan Aset",
+        "desc": "Lindungi aset berharga Anda."
+      },
+      "family": {
+        "title": "Keamanan Keluarga",
+        "desc": "Pastikan masa depan keuangan keluarga Anda aman."
+      }
+    }
+  },
+  "loansPage": {
+    "tag": "Pinjaman & Kredit",
+    "title": "Pinjaman untuk",
+    "titleHighlight": "Setiap Kebutuhan",
+    "subtitle": "Pinjaman cepat, mudah, dan terjangkau untuk rumah, pribadi, bisnis, dan pendidikan.",
+    "applyNow": "Ajukan Sekarang",
+    "checkEligibility": "Periksa Kelayakan",
+    "choose": "Pilih",
+    "loanType": "Jenis Pinjaman",
+    "chooseDesc": "Bandingkan berbagai opsi pinjaman dan temukan yang terbaik untuk Anda",
+    "loanAmount": "Jumlah Pinjaman",
+    "rateFrom": "Tingkat dari",
+    "details": "Detail",
+    "partners": "Bermitra dengan bank dan NBFC terkemuka India",
+    "appTitle": "Dapatkan Pinjaman Anda Secara Instan",
+    "appDesc": "Unduh aplikasi kami dan ajukan pinjaman dalam 5 menit.",
+    "downloadApp": "Unduh Aplikasi",
+    "home": {
+      "name": "Pinjaman Rumah",
+      "tagline": "Miliki rumah impian Anda",
+      "desc": "Pinjaman rumah terjangkau dengan tingkat bunga kompetitif.",
+      "feature1": "Tenor hingga 30 tahun",
+      "feature2": "Suku bunga mengambang dan tetap",
+      "feature3": "Biaya pemrosesan rendah",
+      "feature4": "Pencairan cepat",
+      "feature5": "Fleksibilitas pra-pembayaran"
+    },
+    "personal": {
+      "name": "Pinjaman Pribadi",
+      "tagline": "Dana cepat, tanpa pertanyaan",
+      "desc": "Pinjaman pribadi instan untuk setiap kebutuhan keuangan.",
+      "feature1": "Pencairan instan",
+      "feature2": "Dokumen minimal",
+      "feature3": "Tenor fleksibel",
+      "feature4": "Tingkat kompetitif",
+      "feature5": "Tidak ada biaya tersembunyi"
+    },
+    "business": {
+      "name": "Pinjaman Bisnis",
+      "tagline": "Kembangkan bisnis Anda lebih cepat",
+      "desc": "Pinjaman bisnis yang disesuaikan untuk startup dan UKM.",
+      "feature1": "Jumlah fleksibel",
+      "feature2": "Pemrosesan cepat",
+      "feature3": "Suku bunga rendah",
+      "feature4": "Panduan ahli",
+      "feature5": "Opsi tidak aman tersedia"
+    },
+    "education": {
+      "name": "Pinjaman Pendidikan",
+      "tagline": "Investasi untuk masa depan Anda",
+      "desc": "Pendanaan pendidikan Anda tanpa stres keuangan.",
+      "feature1": "Periode moratorium",
+      "feature2": "Dukungan pemerintah",
+      "feature3": "Pembayaran kembali fleksibel",
+      "feature4": "Tingkat kompetitif",
+      "feature5": "Manfaat tambahan"
+    },
+    "why": {
+      "quick": {
+        "title": "Persetujuan Cepat",
+        "desc": "Dapatkan persetujuan dan dana yang dicairkan dalam hitungan jam."
+      },
+      "rates": {
+        "title": "Tingkat Kompetitif",
+        "desc": "Nikmati tingkat bunga terendah di pasar."
+      },
+      "flexible": {
+        "title": "Syarat Fleksibel",
+        "desc": "Pilih tenor pembayaran kembali yang sesuai dengan situasi keuangan Anda."
+      },
+      "secure": {
+        "title": "Aman & Terlindungi",
+        "desc": "Data Anda dilindungi dengan standar keamanan terdepan di industri."
+      }
+    },
+    "eligibility": {
+      "title": "Kelayakan Sederhana",
+      "subtitle": "Sebagian besar pinjaman kami memiliki persyaratan kelayakan minimal",
+      "requirements": "Persyaratan Dasar",
+      "documents": "Dokumen Diperlukan",
+      "req1": "Usia antara 21-60 tahun",
+      "req2": "Warga negara India dengan ID yang valid",
+      "req3": "Sumber pendapatan yang stabil",
+      "req4": "Skor CIBIL yang baik (Biasanya 750+)",
+      "req5": "Pekerjaan reguler selama 2+ tahun",
+      "doc1": "Kartu PAN / Kartu Aadhaar",
+      "doc2": "Bukti ID & Alamat",
+      "doc3": "Slip Gaji Terbaru",
+      "doc4": "Laporan Bank (6 bulan)",
+      "doc5": "Laporan Akun Pinjaman (jika ada)"
+    }
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Memberdayakan Jutaan",
+    "description": "Pelajari bagaimana Ample Finance membuat penciptaan kekayaan dapat diakses oleh setiap orang India.",
+    "stats": {
+      "investors": {
+        "value": "2M+",
+        "label": "Investor Bahagia"
+      },
+      "assets": {
+        "value": "₹500Cr+",
+        "label": "Aset Dikelola"
+      },
+      "partnerAmcs": {
+        "value": "50+",
+        "label": "Partner AMC"
+      },
+      "rating": {
+        "value": "4.8★",
+        "label": "Rating Aplikasi"
+      }
+    },
+    "story": {
+      "tag": "Cerita Kami",
+      "title": "Lahir dari Keyakinan Sederhana",
+      "para1": "Ample Finance didirikan pada tahun 2020 dengan visi tunggal: membuat investasi semudah memesan makanan secara online. Kami melihat jutaan orang India yang ingin meningkatkan kekayaan mereka tetapi terhalang oleh proses yang kompleks dan saran yang penuh jargon.",
+      "para2": "Para pendiri kami, yang berasal dari latar belakang Goldman Sachs dan Google, tahu bahwa teknologi dapat menjembatani kesenjangan ini. Mereka menetapkan tujuan untuk membangun platform yang dapat digunakan siapa saja – baik Anda seorang investor pemula atau profesional berpengalaman.",
+      "para3": "Hari ini, kami melayani lebih dari 2 juta investor di seluruh India, membantu mereka membangun kekayaan melalui opsi investasi yang cerdas dan dapat diakses. Dan kami baru saja memulai.",
+      "established": "Didirikan 2020"
+    },
+    "mission": {
+      "title": "Misi Kami",
+      "description": "Untuk memberdayakan setiap orang India membangun kekayaan jangka panjang melalui solusi investasi yang sederhana, transparan, dan dapat diakses. Kami percaya kebebasan finansial harus dalam jangkauan semua orang."
+    },
+    "vision": {
+      "title": "Visi Kami",
+      "description": "Menjadi platform pembangunan kekayaan paling terpercaya di India, membantu 50 juta keluarga mencapai tujuan keuangan mereka pada tahun 2030 melalui solusi yang didorong teknologi dan dipersonalisasi."
+    },
+    "values": {
+      "title": "Nilai",
+      "highlight": "Kami",
+      "subtitle": "Prinsip yang memandu semua yang kami lakukan",
+      "customerFirst": {
+        "title": "Pelanggan Pertama",
+        "desc": "Setiap keputusan yang kami buat dimulai dengan bagaimana hal itu menguntungkan investor kami."
+      },
+      "transparency": {
+        "title": "Transparansi",
+        "desc": "Tidak ada biaya tersembunyi, tidak ada istilah kompleks. Hanya investasi yang jujur dan langsung."
+      },
+      "trust": {
+        "title": "Kepercayaan",
+        "desc": "Kami menangani uang Anda dengan perawatan yang sama seperti yang kami berikan milik kami sendiri."
+      },
+      "innovation": {
+        "title": "Inovasi",
+        "desc": "Terus meningkatkan platform kami untuk memberi Anda pengalaman terbaik."
+      }
+    },
+    "team": {
+      "title": "Temui",
+      "highlight": "Kepemimpinan Kami",
+      "subtitle": "Veteran industri yang berkomitmen untuk kesuksesan finansial Anda",
+      "vikram": {
+        "role": "CEO & Pendiri Bersama",
+        "bio": "Bekas Goldman Sachs, 15+ tahun di fintech"
+      },
+      "priya": {
+        "role": "CTO & Pendiri Bersama",
+        "bio": "Eks-Google, membangun sistem keuangan yang dapat diskalakan"
+      },
+      "rahul": {
+        "role": "Kepala Pejabat Investasi",
+        "bio": "20+ tahun dalam manajemen aset"
+      },
+      "ananya": {
+        "role": "Kepala Kesuksesan Pelanggan",
+        "bio": "Passionate tentang pendidikan investor"
+      }
+    },
+    "cta": {
+      "title": "Bergabunglah dengan Keluarga Kami yang Berkembang",
+      "description": "Mulai perjalanan investasi Anda dengan Ample Finance hari ini dan menjadi bagian dari komunitas investor 2M+ kami.",
+      "startInvesting": "Mulai Investasi",
+      "contactUs": "Hubungi Kami"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Kami Di Sini untuk Membantu",
+    "description": "Ada pertanyaan? Tim kami siap membantu Anda dengan apa pun yang Anda butuhkan.",
+    "contactInfo": {
+      "email": {
+        "title": "Kirim Email Kepada Kami",
+        "desc": "Tim kami akan merespons dalam 24 jam"
+      },
+      "phone": {
+        "title": "Hubungi Kami",
+        "desc": "Senin-Sabtu, 9 AM - 7 PM IST"
+      },
+      "visit": {
+        "title": "Kunjungi Kami",
+        "desc": "Kantor pusat kami"
+      },
+      "chat": {
+        "title": "Obrolan Langsung",
+        "desc": "Berinteraksi dengan tim dukungan kami",
+        "value": "Mulai percakapan"
+      }
+    },
+    "form": {
+      "title": "Kirim Pesan kepada Kami",
+      "name": "Nama Lengkap *",
+      "namePlaceholder": "John Doe",
+      "email": "Email *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Telepon",
+      "phonePlaceholder": "+91 98765 43210",
+      "subject": "Subjek *",
+      "selectTopic": "Pilih topik",
+      "investmentQuery": "Pertanyaan Investasi",
+      "insuranceQuery": "Pertanyaan Asuransi",
+      "accountSupport": "Dukungan Akun",
+      "feedback": "Umpan Balik",
+      "other": "Lainnya",
+      "message": "Pesan *",
+      "messagePlaceholder": "Beri tahu kami bagaimana kami dapat membantu...",
+      "send": "Kirim Pesan",
+      "sending": "Mengirim..."
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan"
+    },
+    "faqs": {
+      "q1": {
+        "question": "Bagaimana cara saya mulai berinvestasi?",
+        "answer": "Unduh aplikasi kami, lengkapi KYC Anda, dan Anda dapat mulai berinvestasi dengan hanya ₹100."
+      },
+      "q2": {
+        "question": "Apakah uang saya aman?",
+        "answer": "Ya, kami terdaftar SEBI dan investasi Anda disimpan dengan penjaga terpercaya. Kami menggunakan keamanan tingkat bank."
+      },
+      "q3": {
+        "question": "Apa saja biayanya?",
+        "answer": "Kami percaya pada penetapan harga yang transparan. Tidak ada biaya tersembunyi - Anda hanya membayar rasio biaya dana standar."
+      },
+      "q4": {
+        "question": "Bagaimana cara saya menarik uang?",
+        "answer": "Anda dapat menukar investasi Anda kapan saja melalui aplikasi. Dana biasanya dikreditkan dalam 2-3 hari kerja."
+      }
+    },
+    "support": {
+      "hours": "Jam Dukungan",
+      "weekday": "Senin - Jumat: 9:00 AM - 7:00 PM IST",
+      "saturday": "Sabtu: 10:00 AM - 4:00 PM IST",
+      "sunday": "Minggu: Ditutup"
+    },
+    "address": {
+      "line1": "123 Finance Street, BKC",
+      "line2": "Jammu, Jammu dan Kashmir 400051"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Tetap Perbarui",
+      "subtitle": "Dapatkan tips investasi terbaru dan wawasan pasar",
+      "placeholder": "Masukkan email Anda",
+      "subscribe": "Berlangganan"
+    },
+    "about": "Mitra terpercaya Anda untuk investasi cerdas. Mulai perjalanan membangun kekayaan Anda bersama kami hari ini.",
+    "address": "123 Finance Street, Mumbai, India",
+    "company": {
+      "title": "Perusahaan",
+      "about": "Tentang Kami",
+      "careers": "Karir",
+      "press": "Pers",
+      "blog": "Blog"
+    },
+    "products": {
+      "title": "Produk",
+      "mutualFunds": "Dana Bersama",
+      "insurance": "Asuransi",
+      "sipCalculator": "Kalkulator SIP",
+      "compareFunds": "Bandingkan Dana"
+    },
+    "support": {
+      "title": "Dukungan",
+      "helpCenter": "Pusat Bantuan",
+      "contactUs": "Hubungi Kami",
+      "faqs": "Tanya Jawab",
+      "privacyPolicy": "Kebijakan Privasi"
+    },
+    "legal": {
+      "title": "Hukum",
+      "terms": "Syarat Layanan",
+      "privacy": "Kebijakan Privasi",
+      "disclaimer": "Penafian",
+      "regulatory": "Regulasi"
+    },
+    "copyright": "© 2024 Ample Finance. Semua hak dilindungi."
+  },
+  "auth": {
+    "login": "Masuk",
+    "logout": "Keluar",
+    "loginToAccount": "Masuk ke Akun Anda",
+    "welcomeBack": "Selamat Datang Kembali!",
+    "continueWithPhone": "Lanjutkan dengan Nomor Telepon",
+    "phoneNumber": "Nomor Telepon",
+    "enterPhoneNumber": "Masukkan nomor telepon Anda",
+    "phonePlaceholder": "Masukkan nomor ponsel 10-digit",
+    "sendOTP": "Kirim OTP",
+    "enterOTP": "Masukkan OTP",
+    "otpSent": "OTP dikirim ke",
+    "otpPlaceholder": "Masukkan OTP 6-digit",
+    "verify": "Verifikasi",
+    "verifyAndLogin": "Verifikasi & Masuk",
+    "resendOTP": "Kirim Ulang OTP",
+    "resendIn": "Kirim ulang dalam",
+    "seconds": "detik",
+    "didntReceiveOTP": "Tidak menerima OTP?",
+    "changeNumber": "Ganti Nomor",
+    "loginSuccess": "Login Berhasil!",
+    "loginError": "Login Gagal",
+    "invalidOTP": "OTP tidak valid. Silakan coba lagi.",
+    "invalidPhone": "Silakan masukkan nomor telepon yang valid",
+    "otpExpired": "OTP kadaluarsa. Silakan minta yang baru.",
+    "tooManyAttempts": "Terlalu banyak percobaan. Silakan coba lagi nanti.",
+    "agreedTo": "Dengan melanjutkan, Anda menyetujui",
+    "termsOfService": "Ketentuan Layanan",
+    "and": "dan",
+    "privacyPolicy": "Kebijakan Privasi",
+    "newUser": "Pengguna baru?",
+    "signUp": "Daftar",
+    "loggingIn": "Masuk...",
+    "sendingOTP": "Mengirim OTP...",
+    "verifying": "Memverifikasi..."
+  },
+  "currency": {
+    "title": "Mata Uang",
+    "selectCurrency": "Pilih Mata Uang",
+    "currentCurrency": "Mata Uang Saat Ini",
+    "changeSuccess": "Mata uang berhasil diubah",
+    "INR": "Rupee India (₹)",
+    "USD": "Dolar AS ($)",
+    "EUR": "Euro (€)",
+    "GBP": "Pound Inggris (£)",
+    "conversionNote": "Semua jumlah adalah konversi perkiraan",
+    "baseCurrency": "Mata uang dasar: INR"
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";exports.id=499,exports.ids=[499],exports.modules={499:(e,t,r)=>{r.r(t),r.d(t,{SIPCalculator:()=>o});let o=(0,r(8570).createProxy)(String.raw`C:\Users\wealt\OneDrive\Desktop\projects\grow-wealth-hub-main\grow-wealth-hub-main\app\components\home\SIPCalculator.tsx#SIPCalculator`)}};

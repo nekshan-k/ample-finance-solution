@@ -1,0 +1,1 @@
+"use strict";exports.id=864,exports.ids=[864],exports.modules={8864:(e,o,t)=>{t.r(o),t.d(o,{AppDownloadSection:()=>p});let p=(0,t(8570).createProxy)(String.raw`C:\Users\wealt\OneDrive\Desktop\projects\grow-wealth-hub-main\grow-wealth-hub-main\app\components\home\AppDownloadSection.tsx#AppDownloadSection`)}};

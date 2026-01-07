@@ -1,0 +1,356 @@
+/* Optimized font loading with display=swap for better performance */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Groww-inspired vibrant blue theme */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Vibrant blue primary - Groww inspired */
+    --primary: 233 90% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Theme-aware primary colors - will be overridden by ThemeContext */
+    --primary-50: 239 245 255;
+    --primary-500: 59 130 246;
+    --primary-600: 37 99 235;
+
+    /* Secondary colors - theme-aware */
+    --secondary-50: 240 249 255;
+    --secondary-500: 6 182 212;
+    --secondary-600: 8 145 178;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Neutral colors - theme-aware */
+    --neutral-50: 240 249 255;
+    --neutral-100: 224 242 254;
+    --neutral-700: 22 78 99;
+    --neutral-900: 8 47 73;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Success green for gains */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning/Loss red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 233 90% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --gradient-start: 233 90% 58%;
+    --gradient-end: 256 84% 60%;
+    --gradient-accent: 180 100% 45%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 233 90% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 233 90% 58%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 233 90% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Theme-aware primary colors - will be overridden by ThemeContext */
+    --primary-50: 239 245 255;
+    --primary-500: 59 130 246;
+    --primary-600: 37 99 235;
+
+    /* Secondary colors - theme-aware */
+    --secondary-50: 240 249 255;
+    --secondary-500: 6 182 212;
+    --secondary-600: 8 145 178;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Neutral colors - theme-aware */
+    --neutral-50: 240 249 255;
+    --neutral-100: 224 242 254;
+    --neutral-700: 22 78 99;
+    --neutral-900: 8 47 73;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 233 90% 65%;
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 233 90% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 233 90% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+    font-family: 'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(256, 84%, 60%) 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(256, 84%, 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-to-secondary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, rgb(var(--secondary-500)) 100%);
+  }
+
+  .gradient-border {
+    position: relative;
+    background: hsl(var(--card));
+    border-radius: var(--radius);
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, rgb(var(--secondary-500)) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .glass {
+    @apply backdrop-blur-lg bg-card/80;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+.react-tel-input {
+  width: 100%;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.react-tel-input .form-control:focus {
+  /* border-color: hsl(var(--primary)) !important; */
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1) !important;
+  outline: none !important;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: transparent !important;
+  border-right: none !important;
+}
+
+.react-tel-input .selected-flag {
+  background-color: transparent !important;
+  width: 45px !important;
+  padding: 0 0 0 8px !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: hsl(var(--accent)) !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background-color: hsl(var(--accent)) !important;
+}
+
+.react-tel-input .country-list {
+  background-color: hsl(var(--background)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  max-height: 300px !important;
+  margin-top: 4px !important;
+}
+
+.react-tel-input .country-list .country {
+  color: hsl(var(--foreground)) !important;
+  padding: 8px 12px !important;
+}
+
+.react-tel-input .country-list .country:hover {
+  background-color: hsl(var(--accent)) !important;
+}
+
+.react-tel-input .country-list .country.highlight {
+  background-color: hsl(var(--accent)) !important;
+}
+
+.react-tel-input .search-box {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+  border: 1px solid hsl(var(--border)) !important;
+  padding: 8px !important;
+  margin: 8px !important;
+  border-radius: 0.375rem !important;
+}
+
+.react-tel-input .search-box:focus {
+  border-color: hsl(var(--primary)) !important;
+  outline: none !important;
+}

@@ -1,0 +1,83 @@
+{
+  "pages": {
+    "/not-found": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/not-found-0473569e668be7e7.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/app/_not-found/page-f84e0197bfcd7935.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/layout-3c3a248f9c1e7cd9.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/about/page-72eee38d49870e60.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/contact/page-10494e50d91a7f77.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/page-e9affa1c82a3feaa.js"
+    ],
+    "/products/insurance/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/products/insurance/page-f7f2abe3ce2d639e.js"
+    ],
+    "/products/loans/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/products/loans/page-d55c0680d690cadd.js"
+    ],
+    "/products/mutual-funds/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/products/mutual-funds/page-8a553492ac4d5842.js"
+    ],
+    "/products/page": [
+      "static/chunks/webpack-a9f20cf5d7765820.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-3309664940807e98.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-8e835b72e7db005a.js",
+      "static/chunks/app/products/page-751512878dd6c59d.js"
+    ]
+  }
+}

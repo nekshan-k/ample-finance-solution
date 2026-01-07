@@ -1,0 +1,678 @@
+{
+  "common": {
+    "appName": "Ample Finance",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "learnMore": "Watch Demo",
+    "getStarted": "Get App",
+    "readMore": "Read More",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "signUp": "Sign Up",
+    "welcome": "Welcome",
+    "viewAll": "View All Products",
+    "startInvesting": "Start Investing",
+    "talkToExpert": "Talk to an Expert",
+    "getStartedFree": "Get Started Free"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "mutualFunds": "Mutual Funds",
+    "insurance": "Insurance",
+    "loans": "Loans",
+    "login": "Login"
+  },
+  "hero": {
+    "trustedBy": "Trusted by 2M+ investors",
+    "title": "Invest in Your Future With Confidence",
+    "subtitle": "Start your wealth-building journey with India's most trusted investment platform.",
+    "cta": "Start Investing",
+    "learnMore": "Watch Demo",
+    "happyInvestors": "Happy Investors",
+    "assetsManaged": "Assets Managed",
+    "securePlatform": "Secure Platform",
+    "mock": {
+      "greeting": "Good Morning",
+      "userName": "Nekshan",
+      "totalInvestmentLabel": "Total Investment",
+      "thisMonth": "This Month",
+      "actions": {
+        "invest": "Invest",
+        "sip": "SIP",
+        "insurance": "Insurance",
+        "more": "More"
+      },
+      "fundName": "HDFC Top 100",
+      "fundType": "Large Cap Fund",
+      "fundReturnLabel": "1Y Return",
+      "portfolioUpTitle": "Portfolio Up",
+      "secureTitle": "100% Secure",
+      "secureSubtitle": "Bank-grade security"
+    }
+  },
+  "calculator": {
+    "tag": "Free SIP Calculator",
+    "title": "SIP Calculator",
+    "heading": "Plan Your Wealth Journey",
+    "description": "Calculate how much your SIP investments can grow over time. Start planning for your financial goals today.",
+    "enterDetails": "Enter Your Details",
+    "monthlyInvestment": "Monthly Investment",
+    "expectedReturn": "Expected Return (p.a.)",
+    "timePeriod": "Time Period",
+    "years": "Years",
+    "calculate": "Calculate",
+    "totalInvestment": "Invested Amount",
+    "estimatedReturns": "Est. Returns",
+    "totalValue": "Total Value",
+    "investmentBreakdown": "Investment Breakdown",
+    "invested": "Invested",
+    "returns": "Returns",
+    "investedPct": "Invested {percent}%",
+    "returnsPct": "Returns {percent}%",
+    "startSIPNow": "Start SIP Now",
+    "sipGrowth": "Your SIP of {amount}/month can grow in {years} years",
+    "minMonthlyInvestmentLabel": "₹500",
+    "maxMonthlyInvestmentLabel": "₹1,00,000",
+    "minExpectedReturnLabel": "1%",
+    "maxExpectedReturnLabel": "30%",
+    "minTimePeriodLabel": "1 Year",
+    "maxTimePeriodLabel": "40 Years"
+  },
+  "features": {
+    "tag": "Why Choose Us",
+    "title": "Everything You Need to",
+    "titleHighlight": "Grow Your Wealth",
+    "subtitle": "A complete investment ecosystem designed for modern investors. Simple, secure, and smart.",
+    "smartInvestments": "Smart Investments",
+    "smartInvestmentsDesc": "Access 5000+ mutual funds with expert recommendations tailored to your goals.",
+    "comprehensiveInsurance": "Comprehensive Insurance",
+    "comprehensiveInsuranceDesc": "Protect what matters with health, life, term, and motor insurance.",
+    "portfolioAnalytics": "Portfolio Analytics",
+    "portfolioAnalyticsDesc": "Track your investments with beautiful charts and real-time insights.",
+    "mobileFirst": "Mobile-First Experience",
+    "mobileFirstDesc": "Invest on the go with our intuitive, user-friendly mobile app.",
+    "instantProcessing": "Instant Processing",
+    "instantProcessingDesc": "Quick KYC verification and instant investment processing.",
+    "securePayments": "Secure Payments",
+    "securePaymentsDesc": "Multiple payment options with bank-grade security encryption.",
+    "learnMore": "Learn More"
+  },
+  "products": {
+    "tag": "Our Products",
+    "title": "Investment & Protection,",
+    "titleHighlight": "All in One",
+    "subtitle": "From wealth creation to life protection, we've got you covered with our comprehensive range of financial products.",
+    "mutualFunds": "Mutual Funds",
+    "mutualFundsDesc": "Build wealth with diversified investment portfolios. Choose from equity, debt, and hybrid funds.",
+    "fundsAvailable": "Funds Available",
+    "minInvestment": "Min Investment",
+    "perMonth": "/month",
+    "healthInsurance": "Health Insurance",
+    "healthInsuranceDesc": "Comprehensive health coverage for you and your family. Cashless claims at 10,000+ hospitals.",
+    "networkHospitals": "Network Hospitals",
+    "claimsSettled": "Claims Settled",
+    "termInsurance": "Term Insurance",
+    "termInsuranceDesc": "Secure your family's future with affordable term life insurance plans.",
+    "coverageUpto": "Coverage Upto",
+    "startingAt": "Starting At",
+    "motorInsurance": "Motor Insurance",
+    "motorInsuranceDesc": "Comprehensive car and bike insurance with instant policy issuance.",
+    "cashlessGarages": "Cashless Garages",
+    "claimSupport": "Claim Support",
+    "explore": "Explore"
+  },
+  "trust": {
+    "tag": "Trust & Security",
+    "title": "Your Investments Are",
+    "titleHighlight": "Safe With Us",
+    "subtitle": "We're regulated by India's top financial authorities and use industry-leading security measures to protect your investments.",
+    "sebiRegistered": "SEBI Registered",
+    "sebiDesc": "Authorized investment advisor",
+    "irdaiLicensed": "IRDAI Licensed",
+    "irdaiDesc": "Licensed insurance broker",
+    "bankGradeSecurity": "Bank-Grade Security",
+    "bankGradeSecurityDesc": "256-bit SSL encryption",
+    "isoCertified": "ISO Certified",
+    "isoCertifiedDesc": "Information security certified",
+    "trustedPartners": "Trusted partners and fund houses"
+  },
+  "testimonials": {
+    "tag": "Testimonials",
+    "title": "Loved by",
+    "titleHighlight": "2 Million+",
+    "titleEnd": "Investors",
+    "subtitle": "Don't just take our word for it. Here's what our investors have to say.",
+    "testimonial1": "Started my investment journey with Ample Finance last year. The app is incredibly easy to use, and I've already seen great returns on my SIPs!",
+    "testimonial1Name": "Priya Sharma",
+    "testimonial1Role": "Software Engineer",
+    "testimonial2": "Best platform for mutual funds. The research tools and fund recommendations have helped me build a diversified portfolio with confidence.",
+    "testimonial2Name": "Rajesh Kumar",
+    "testimonial2Role": "Business Owner",
+    "testimonial3": "Got my health insurance through Ample Finance. The claim process was smooth, and their customer support is exceptional.",
+    "testimonial3Name": "Anita Desai",
+    "testimonial3Role": "Doctor"
+  },
+  "appDownload": {
+    "tag": "Rated 4.8 on App Store",
+    "title": "Download the",
+    "titleEnd": "App",
+    "subtitle": "Join millions of smart investors. Start your investment journey with just ₹100. Available on iOS and Android.",
+    "feature1": "One-tap investments",
+    "feature2": "Real-time portfolio tracking",
+    "feature3": "Instant KYC verification",
+    "feature4": "Secure biometric login",
+    "feature5": "24/7 customer support",
+    "feature6": "Zero paperwork",
+    "downloadOn": "Download on the",
+    "appStore": "App Store",
+    "getItOn": "Get it on",
+    "googlePlay": "Google Play",
+    "portfolioValue": "Portfolio Value"
+  },
+  "cta": {
+    "tag": "Start with just {amount}",
+    "title": "Ready to Start Your Investment Journey?",
+    "subtitle": "Join millions of smart investors who trust Ample Finance. Download the app now and get started in under 5 minutes.",
+    "getStarted": "Get Started Free",
+    "talkToExpert": "Talk to an Expert"
+  },
+  "footer": {
+    "description": "Your trusted partner for wealth management and investment solutions",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "support": "Support",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "faq": "FAQ",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Building wealth for a better tomorrow",
+    "description": "We are committed to helping you achieve your financial goals through smart investment strategies and expert guidance."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Address",
+    "callUs": "Call Us",
+    "emailUs": "Email Us"
+  },
+  "mutualFundsPage": {
+    "tag": "Investments",
+    "title": "Mutual",
+    "titleHighlight": "Funds",
+    "subtitle": "Invest in top-performing mutual funds from India's leading fund houses. Start your SIP with just ₹100.",
+    "startSIP": "Start SIP",
+    "calculateReturns": "Calculate Returns",
+    "fundsAvailable": "Funds Available",
+    "minInvestment": "Min. Investment",
+    "partners": "Partners",
+    "avgReturns": "Avg. Returns",
+    "searchPlaceholder": "Search mutual funds...",
+    "filters": "Filters",
+    "returns1Y": "1Y Returns",
+    "returns3Y": "3Y Returns",
+    "returns5Y": "5Y Returns",
+    "details": "Details",
+    "invest": "Invest",
+    "learnTitle": "Learn About Mutual Funds",
+    "learnSubtitle": "New to investing? Understand the basics before you begin.",
+    "topic1Title": "What is a Mutual Fund?",
+    "topic1Desc": "A professionally managed investment fund that pools money from multiple investors.",
+    "topic2Title": "SIP vs Lump Sum",
+    "topic2Desc": "Learn the difference between systematic investment and one-time investment.",
+    "topic3Title": "Types of Funds",
+    "topic3Desc": "Understand equity, debt, hybrid, and other fund categories.",
+    "readMore": "Read More",
+    "appTitle": "Invest on the Go",
+    "appSubtitle": "Download our app for seamless investing experience",
+    "downloadApp": "Download App"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "loginToAccount": "Login to Your Account",
+    "welcomeBack": "Welcome Back!",
+    "continueWithPhone": "Continue with Phone Number",
+    "phoneNumber": "Phone Number",
+    "enterPhoneNumber": "Enter your phone number",
+    "phonePlaceholder": "Enter 10-digit mobile number",
+    "sendOTP": "Send OTP",
+    "enterOTP": "Enter OTP",
+    "otpSent": "OTP sent to",
+    "otpPlaceholder": "Enter 6-digit OTP",
+    "verify": "Verify",
+    "verifyAndLogin": "Verify & Login",
+    "resendOTP": "Resend OTP",
+    "resendIn": "Resend in",
+    "seconds": "seconds",
+    "didntReceiveOTP": "Didn't receive OTP?",
+    "changeNumber": "Change Number",
+    "loginSuccess": "Login Successful!",
+    "loginError": "Login Failed",
+    "invalidOTP": "Invalid OTP. Please try again.",
+    "invalidPhone": "Please enter a valid phone number",
+    "otpExpired": "OTP expired. Please request a new one.",
+    "tooManyAttempts": "Too many attempts. Please try again later.",
+    "agreedTo": "By continuing, you agree to our",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "newUser": "New user?",
+    "signUp": "Sign Up",
+    "loggingIn": "Logging in...",
+    "sendingOTP": "Sending OTP...",
+    "verifying": "Verifying..."
+  },
+  "currency": {
+    "title": "Currency",
+    "selectCurrency": "Select Currency",
+    "currentCurrency": "Current Currency",
+    "changeSuccess": "Currency changed successfully",
+    "INR": "Indian Rupee (₹)",
+    "USD": "US Dollar ($)",
+    "EUR": "Euro (€)",
+    "GBP": "British Pound (£)",
+    "conversionNote": "All amounts are approximate conversions",
+    "baseCurrency": "Base currency: INR"
+  },
+  "insurancePage": {
+    "tag": "Protection",
+    "title": "Insurance",
+    "titleHighlight": "Solutions",
+    "subtitle": "Protect what matters most with comprehensive insurance plans. From health to life, we've got you covered.",
+    "getQuote": "Get Quote",
+    "comparePlans": "Compare Plans",
+    "choose": "Choose Your",
+    "coverage": "Coverage",
+    "chooseDesc": "Compare plans and find the perfect protection for your needs",
+    "coverageLabel": "Coverage",
+    "startingAt": "Starting at",
+    "viewPlans": "View Plans",
+    "partners": "Partnered with India's top insurance companies",
+    "appTitle": "Get Insured in Minutes",
+    "appDesc": "Download our app for instant policy issuance and easy claim management",
+    "downloadApp": "Download App",
+    "health": {
+      "name": "Health Insurance",
+      "tagline": "Complete medical coverage",
+      "desc": "Comprehensive health coverage for you and your family with cashless claims at 10,000+ network hospitals.",
+      "feature1": "Cashless hospitalization",
+      "feature2": "Pre & post hospitalization",
+      "feature3": "Day care procedures",
+      "feature4": "No claim bonus",
+      "feature5": "Free health checkups",
+      "perMonth": "/month"
+    },
+    "term": {
+      "name": "Term Insurance",
+      "tagline": "Secure your family's future",
+      "desc": "Affordable term life insurance plans that ensure your family's financial security in your absence.",
+      "feature1": "High sum assured",
+      "feature2": "Affordable premiums",
+      "feature3": "Tax benefits under 80C",
+      "feature4": "Critical illness cover",
+      "feature5": "Accidental death benefit",
+      "perMonth": "/month"
+    },
+    "motor": {
+      "name": "Motor Insurance",
+      "tagline": "Drive with confidence",
+      "desc": "Comprehensive car and two-wheeler insurance with instant policy issuance and quick claim settlement.",
+      "feature1": "Own damage cover",
+      "feature2": "Third-party liability",
+      "feature3": "Personal accident cover",
+      "feature4": "Roadside assistance",
+      "feature5": "Cashless repairs",
+      "coverage": "Comprehensive",
+      "perYear": "/year"
+    },
+    "travel": {
+      "name": "Travel Insurance",
+      "tagline": "Travel worry-free",
+      "desc": "Global travel protection covering medical emergencies, trip cancellations, and lost baggage.",
+      "feature1": "Medical coverage abroad",
+      "feature2": "Trip cancellation",
+      "feature3": "Lost baggage claim",
+      "feature4": "Flight delay cover",
+      "feature5": "24/7 assistance",
+      "coverage": "Global Coverage",
+      "perTrip": "/trip"
+    },
+    "why": {
+      "protection": {
+        "title": "Financial Protection",
+        "desc": "Protect your family from unexpected financial burdens during emergencies."
+      },
+      "peace": {
+        "title": "Peace of Mind",
+        "desc": "Live stress-free knowing that you and your loved ones are covered."
+      },
+      "asset": {
+        "title": "Asset Protection",
+        "desc": "Safeguard your valuable assets like home, car, and health."
+      },
+      "family": {
+        "title": "Family Security",
+        "desc": "Ensure your family's financial future is secure no matter what."
+      }
+    }
+  },
+  "loansPage": {
+    "tag": "Loans & Credit",
+    "title": "Loans for",
+    "titleHighlight": "Every Need",
+    "subtitle": "Quick, easy, and affordable loans for home, personal, business, and education. Get the funds you need within hours.",
+    "applyNow": "Apply Now",
+    "checkEligibility": "Check Eligibility",
+    "choose": "Choose Your",
+    "loanType": "Loan Type",
+    "chooseDesc": "Compare different loan options and find what works best for you",
+    "loanAmount": "Loan Amount",
+    "rateFrom": "Rate from",
+    "details": "Details",
+    "partners": "Partnered with India's leading banks and NBFCs",
+    "appTitle": "Get Your Loan Instantly",
+    "appDesc": "Download our app and apply for a loan in just 5 minutes. No hidden charges, no surprises.",
+    "downloadApp": "Download App",
+    "home": {
+      "name": "Home Loans",
+      "tagline": "Own your dream home",
+      "desc": "Affordable home loans with competitive interest rates and flexible repayment options. Get approved in 48 hours.",
+      "feature1": "Up to 30 year tenure",
+      "feature2": "Floating & fixed rates",
+      "feature3": "Low processing fees",
+      "feature4": "Quick disbursal",
+      "feature5": "Pre-payment flexibility"
+    },
+    "personal": {
+      "name": "Personal Loans",
+      "tagline": "Quick funds, no questions",
+      "desc": "Instant personal loans for any financial need. Get approved within hours with minimal documentation.",
+      "feature1": "Instant disbursal",
+      "feature2": "Minimal documents",
+      "feature3": "Flexible tenure",
+      "feature4": "Competitive rates",
+      "feature5": "No hidden charges"
+    },
+    "business": {
+      "name": "Business Loans",
+      "tagline": "Grow your business faster",
+      "desc": "Customized business loans for startups and SMEs. Fuel your growth with flexible financing solutions.",
+      "feature1": "Flexible amount",
+      "feature2": "Quick processing",
+      "feature3": "Low interest rates",
+      "feature4": "Expert guidance",
+      "feature5": "Unsecured option available"
+    },
+    "education": {
+      "name": "Education Loans",
+      "tagline": "Invest in your future",
+      "desc": "Fund your education without financial stress. Education loans with minimal EMI burden during studies.",
+      "feature1": "Moratorium period",
+      "feature2": "Government backing",
+      "feature3": "Flexible repayment",
+      "feature4": "Competitive rates",
+      "feature5": "Additional benefits"
+    },
+    "why": {
+      "quick": {
+        "title": "Quick Approval",
+        "desc": "Get approved and funds disbursed within hours with minimal documentation."
+      },
+      "rates": {
+        "title": "Competitive Rates",
+        "desc": "Enjoy the lowest interest rates in the market with transparent pricing."
+      },
+      "flexible": {
+        "title": "Flexible Terms",
+        "desc": "Choose repayment tenure that suits your financial situation perfectly."
+      },
+      "secure": {
+        "title": "Secure & Safe",
+        "desc": "Your data is protected with industry-leading security standards."
+      }
+    },
+    "eligibility": {
+      "title": "Simple Eligibility",
+      "subtitle": "Most of our loans have minimal eligibility requirements",
+      "requirements": "Basic Requirements",
+      "documents": "Documents Needed",
+      "req1": "Age between 21-60 years",
+      "req2": "Indian citizen with valid ID",
+      "req3": "Stable income source",
+      "req4": "Good CIBIL score (Typically 750+)",
+      "req5": "Regular employment for 2+ years",
+      "doc1": "PAN Card / Aadhaar Card",
+      "doc2": "ID & Address Proof",
+      "doc3": "Recent Salary Slips",
+      "doc4": "Bank Statements (6 months)",
+      "doc5": "Loan Account Statements (if any)"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Empowering Millions",
+    "description": "Learn how Ample Finance is making wealth creation accessible to every Indian.",
+    "stats": {
+      "investors": {
+        "value": "2M+",
+        "label": "Happy Investors"
+      },
+      "assets": {
+        "value": "₹500Cr+",
+        "label": "Assets Managed"
+      },
+      "partnerAmcs": {
+        "value": "50+",
+        "label": "Partner AMCs"
+      },
+      "rating": {
+        "value": "4.8★",
+        "label": "App Rating"
+      }
+    },
+    "story": {
+      "tag": "Our Story",
+      "title": "Born from a Simple Belief",
+      "para1": "Ample Finance was founded in 2020 with a singular vision: to make investing as simple as ordering food online. We saw millions of Indians wanting to grow their wealth but held back by complex processes and jargon-filled advice.",
+      "para2": "Our founders, coming from backgrounds in Goldman Sachs and Google, knew technology could bridge this gap. They set out to build a platform that anyone could use – whether you're a first-time investor or a seasoned pro.",
+      "para3": "Today, we serve over 2 million investors across India, helping them build wealth through smart, accessible investment options. And we're just getting started.",
+      "established": "Est. 2020"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower every Indian to build long-term wealth through simple, transparent, and accessible investment solutions. We believe financial freedom should be within everyone's reach."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become India's most trusted wealth-building platform, helping 50 million families achieve their financial goals by 2030 through technology-driven, personalized solutions."
+    },
+    "values": {
+      "title": "Our",
+      "highlight": "Values",
+      "subtitle": "The principles that guide everything we do",
+      "customerFirst": {
+        "title": "Customer First",
+        "desc": "Every decision we make starts with how it benefits our investors."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "desc": "No hidden fees, no complex terms. Just honest, straightforward investing."
+      },
+      "trust": {
+        "title": "Trust",
+        "desc": "We handle your money with the same care we'd give our own."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Constantly improving our platform to give you the best experience."
+      }
+    },
+    "team": {
+      "title": "Meet Our",
+      "highlight": "Leadership",
+      "subtitle": "Industry veterans committed to your financial success",
+      "vikram": {
+        "role": "CEO & Co-founder",
+        "bio": "Former Goldman Sachs, 15+ years in fintech"
+      },
+      "priya": {
+        "role": "CTO & Co-founder",
+        "bio": "Ex-Google, building scalable financial systems"
+      },
+      "rahul": {
+        "role": "Chief Investment Officer",
+        "bio": "20+ years in asset management"
+      },
+      "ananya": {
+        "role": "Head of Customer Success",
+        "bio": "Passionate about investor education"
+      }
+    },
+    "cta": {
+      "title": "Join Our Growing Family",
+      "description": "Start your investment journey with Ample Finance today and become part of our 2M+ strong investor community.",
+      "startInvesting": "Start Investing",
+      "contactUs": "Contact Us"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're Here to Help",
+    "description": "Have questions? Our team is here to help you with anything you need.",
+    "contactInfo": {
+      "email": {
+        "title": "Email Us",
+        "desc": "Our team will respond within 24 hours"
+      },
+      "phone": {
+        "title": "Call Us",
+        "desc": "Mon-Sat, 9 AM - 7 PM IST"
+      },
+      "visit": {
+        "title": "Visit Us",
+        "desc": "Our headquarters"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "desc": "Chat with our support team",
+        "value": "Start a conversation"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name *",
+      "namePlaceholder": "John Doe",
+      "email": "Email *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+91 98765 43210",
+      "subject": "Subject *",
+      "selectTopic": "Select a topic",
+      "investmentQuery": "Investment Query",
+      "insuranceQuery": "Insurance Query",
+      "accountSupport": "Account Support",
+      "feedback": "Feedback",
+      "other": "Other",
+      "message": "Message *",
+      "messagePlaceholder": "Tell us how we can help...",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "faqs": {
+      "q1": {
+        "question": "How do I start investing?",
+        "answer": "Download our app, complete your KYC, and you can start investing with as little as ₹100."
+      },
+      "q2": {
+        "question": "Is my money safe?",
+        "answer": "Yes, we're SEBI registered and your investments are held with trusted custodians. We use bank-grade security."
+      },
+      "q3": {
+        "question": "What are the charges?",
+        "answer": "We believe in transparent pricing. There are no hidden charges - you only pay the standard fund expense ratio."
+      },
+      "q4": {
+        "question": "How can I withdraw my money?",
+        "answer": "You can redeem your investments anytime through the app. Funds are typically credited within 2-3 business days."
+      }
+    },
+    "support": {
+      "hours": "Support Hours",
+      "weekday": "Monday - Friday: 9:00 AM - 7:00 PM IST",
+      "saturday": "Saturday: 10:00 AM - 4:00 PM IST",
+      "sunday": "Sunday: Closed"
+    },
+    "address": {
+      "line1": "123 Finance Street, BKC",
+      "line2": "Jammu, Jammu and Kashmir 400051"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Get the latest investment tips and market insights",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "about": "Your trusted partner for smart investments. Start your wealth-building journey with us today.",
+    "address": "123 Finance Street, Mumbai, India",
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "press": "Press",
+      "blog": "Blog"
+    },
+    "products": {
+      "title": "Products",
+      "mutualFunds": "Mutual Funds",
+      "insurance": "Insurance",
+      "sipCalculator": "SIP Calculator",
+      "compareFunds": "Compare Funds"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us",
+      "faqs": "FAQs",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "disclaimer": "Disclaimer",
+      "regulatory": "Regulatory"
+    },
+    "copyright": "© 2024 Ample Finance. All rights reserved."
+  }
+}

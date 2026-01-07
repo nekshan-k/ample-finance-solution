@@ -1,0 +1,37 @@
+{
+  "name": "Ample Finance - Smart Investments",
+  "short_name": "Ample Finance",
+  "description": "Your trusted partner for smart investments. Mutual funds, insurance, and loans all in one place.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5654f5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business"],
+  "shortcuts": [
+    {
+      "name": "Start Investing",
+      "url": "/products",
+      "description": "Browse investment products"
+    },
+    {
+      "name": "SIP Calculator",
+      "url": "/#sip-calculator",
+      "description": "Calculate SIP returns"
+    }
+  ]
+}
