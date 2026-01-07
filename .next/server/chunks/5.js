@@ -1,1 +1,0 @@
-"use strict";exports.id=5,exports.ids=[5],exports.modules={5:(e,t,s)=>{s.r(t),s.d(t,{TestimonialsSection:()=>o});let o=(0,s(8570).createProxy)(String.raw`C:\Users\wealt\OneDrive\Desktop\projects\grow-wealth-hub-main\grow-wealth-hub-main\app\components\home\TestimonialsSection.tsx#TestimonialsSection`)}};

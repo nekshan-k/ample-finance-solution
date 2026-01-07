@@ -1,1 +1,0 @@
-"use strict";exports.id=936,exports.ids=[936],exports.modules={2936:(e,t,o)=>{o.r(t),o.d(t,{CTASection:()=>r});let r=(0,o(8570).createProxy)(String.raw`C:\Users\wealt\OneDrive\Desktop\projects\grow-wealth-hub-main\grow-wealth-hub-main\app\components\home\CTASection.tsx#CTASection`)}};
