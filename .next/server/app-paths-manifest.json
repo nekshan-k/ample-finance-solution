@@ -1,14 +1,14 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
-  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/send-otp/route": "app/api/auth/send-otp/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
   "/api/auth/session/route": "app/api/auth/session/route.js",
   "/api/auth/verify-otp/route": "app/api/auth/verify-otp/route.js",
   "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
   "/products/insurance/page": "app/products/insurance/page.js",
-  "/products/loans/page": "app/products/loans/page.js",
   "/products/mutual-funds/page": "app/products/mutual-funds/page.js",
+  "/products/loans/page": "app/products/loans/page.js",
   "/products/page": "app/products/page.js"
 }
