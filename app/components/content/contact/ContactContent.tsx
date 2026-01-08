@@ -53,7 +53,7 @@ const faqsData = [
   { questionKey: "faqs.q4.question", answerKey: "faqs.q4.answer" },
 ];
 
-export function Contact() {
+export function ContactContent() {
   const { toast } = useToast();
   const t = useTranslations('contact');
   const tCommon = useTranslations('common');

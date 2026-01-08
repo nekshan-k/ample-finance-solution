@@ -21,15 +21,15 @@ export const Navbar = memo(function Navbar() {
     { name: t('home'), href: "/" },
     {
       name: t('products'),
-      href: "/products",
+      href: "/pages/products",
       submenu: [
-        { name: t('mutualFunds'), href: "/products/mutual-funds" },
-        { name: t('insurance'), href: "/products/insurance" },
-        { name: t('loans'), href: "/products/loans" }
+        { name: t('mutualFunds'), href: "/pages/products/mutual-funds" },
+        { name: t('insurance'), href: "/pages/products/insurance" },
+        { name: t('loans'), href: "/pages/products/loans" }
       ]
     },
-    { name: t('about'), href: "/about" },
-    { name: t('contact'), href: "/contact" }
+    { name: t('about'), href: "/pages/about" },
+    { name: t('contact'), href: "/pages/contact" }
   ];
 
   const [isOpen, setIsOpen] = useState(false);

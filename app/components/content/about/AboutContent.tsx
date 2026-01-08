@@ -46,7 +46,7 @@ const teamData = [
   },
 ];
 
-export function About() {
+export function AboutContent() {
   const t = useTranslations('about');
   const tCommon = useTranslations('common');
   const { currency } = useCurrency();
