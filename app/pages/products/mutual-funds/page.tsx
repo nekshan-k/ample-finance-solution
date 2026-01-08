@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useCurrency } from "@/app/context/CurrencyContext";
 import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/lib/currency";
+import { useTheme } from "@/app/context/ThemeContext";
 
 const categories = ["All", "Equity", "Debt", "Hybrid", "Tax Saver", "Index"];
 
@@ -77,6 +78,7 @@ export default function MutualFunds() {
   const t = useTranslations('mutualFundsPage');
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
@@ -132,7 +134,7 @@ export default function MutualFunds() {
               {t('tag')}
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words overflow-hidden">
-              {t('title')} <span className="gradient-text">{t('titleHighlight')}</span>
+              {t('title')} <span className={useGradient ? "gradient-text" : "solid-text"}>{t('titleHighlight')}</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 break-words overflow-hidden">
               {t('subtitle')}
@@ -205,7 +207,7 @@ export default function MutualFunds() {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-4 sm:gap-6">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
+                      <div className={`w-12 h-12 rounded-xl ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center flex-shrink-0`}>
                         <TrendingUp className="w-6 h-6 text-primary-foreground flex-shrink-0" />
                       </div>
                       <div className="min-w-0">

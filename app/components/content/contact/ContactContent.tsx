@@ -11,9 +11,10 @@ import {
   Send,
   CheckCircle
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useToast } from "@/app/hooks/use-toast";
 import { useTranslations } from 'next-intl';
+import { useScrollReveal } from '@/app/hooks/useScrollReveal';
 
 const contactInfo = [
   {
@@ -57,6 +58,13 @@ export function ContactContent() {
   const { toast } = useToast();
   const t = useTranslations('contact');
   const tCommon = useTranslations('common');
+  
+  const contactInfoRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLDivElement>(null);
+  const faqRef = useRef<HTMLDivElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  useScrollReveal([contactInfoRef, formRef, faqRef, ctaRef]);
   
   const [formData, setFormData] = useState({
     name: "",
@@ -102,7 +110,7 @@ export function ContactContent() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section ref={contactInfoRef} className="py-16 scroll-reveal">
         <div className="container mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((info) => (
@@ -123,7 +131,7 @@ export function ContactContent() {
         </div>
       </section>
 
-      <section className="py-16 bg-secondary/50">
+      <section ref={formRef} className="py-16 bg-secondary/50 scroll-reveal-scale">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -261,7 +269,7 @@ export function ContactContent() {
         </div>
       </section>
 
-      <section className="h-80 bg-secondary relative">
+      <section ref={ctaRef} className="h-80 bg-secondary relative scroll-reveal">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />

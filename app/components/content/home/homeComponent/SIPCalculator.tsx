@@ -6,6 +6,7 @@ import { Button } from "@/app/components/ui/button";
 import { TrendingUp } from "lucide-react";
 import { useTranslations, useLocale } from 'next-intl';
 import { useCurrency } from '@/app/context/CurrencyContext';
+import { useTheme } from '@/app/context/ThemeContext';
 import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/lib/currency";
 
 const getRangeStyle = (value: number, min: number, max: number) => {
@@ -19,6 +20,7 @@ export const SIPCalculator = memo(function SIPCalculator() {
   const t = useTranslations('calculator');
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   
   const BASE_MONTHLY_INR = 27500;
   const MIN_MONTHLY_INR = 500;
@@ -92,7 +94,7 @@ export const SIPCalculator = memo(function SIPCalculator() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-primary/5 to-transparent overflow-x-hidden">
+    <section className={`py-20 overflow-x-hidden ${useGradient ? 'bg-gradient-to-b from-primary/5 to-transparent' : 'bg-primary/5'}`}>
       <div className="container mx-auto px-3 sm:px-4 w-full">
           <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
@@ -219,7 +221,7 @@ export const SIPCalculator = memo(function SIPCalculator() {
           </div>
 
           <div className="space-y-4 sm:space-y-6 overflow-hidden">
-            <div className="bg-gradient-to-br from-primary to-secondary-500 rounded-3xl p-6 sm:p-8 text-white overflow-hidden">
+            <div className={`${useGradient ? 'bg-gradient-to-br from-primary to-secondary-500' : 'bg-primary'} rounded-3xl p-6 sm:p-8 text-white overflow-hidden`}>
               <p className="text-white/80 text-sm mb-2">{t('totalValue')}</p>
               <h4 className="text-3xl sm:text-4xl font-bold mb-3 break-words overflow-hidden">
                 {formatCurrency(displayFutureValue)}

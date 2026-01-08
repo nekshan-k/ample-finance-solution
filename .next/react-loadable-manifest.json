@@ -1,11 +1,66 @@
 {
-  "app\\components\\layout\\Layout.tsx -> @/app/components/FloatingThemeButton": {
-    "id": "app\\components\\layout\\Layout.tsx -> @/app/components/FloatingThemeButton",
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/AppDownloadSection": {
+    "id": 6187,
     "files": [
-      "static/css/lib.css",
-      "static/chunks/lib.js",
-      "static/chunks/commons.js",
-      "static/chunks/_app-pages-browser_app_components_FloatingThemeButton_tsx.js"
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/187.ab1d89665588724e.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/CTASection": {
+    "id": 4162,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/162.07543b5c9074fb2d.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/FeaturesSection": {
+    "id": 4191,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/191.5834552e682d06cf.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/ProductsSection": {
+    "id": 8979,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/979.d5916b75bd6125ec.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/SIPCalculator": {
+    "id": 8030,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/30.00bfbedc0b26236b.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/TestimonialsSection": {
+    "id": 4792,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/792.26f121603f405cd8.js"
+    ]
+  },
+  "app\\components\\content\\home\\HomeContent.tsx -> ./homeComponent/TrustSection": {
+    "id": 4420,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/420.40bf925dc3c83aaf.js"
+    ]
+  },
+  "app\\components\\layout\\Layout.tsx -> @/app/components/FloatingThemeButton": {
+    "id": 2505,
+    "files": [
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/505.d8a24bd3cbbf5c8e.js"
     ]
   }
 }

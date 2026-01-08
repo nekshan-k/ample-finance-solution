@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { useState, useEffect } from "react";
 import { useCurrency } from "@/app/context/CurrencyContext";
+import { useTheme } from '@/app/context/ThemeContext';
 import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/lib/currency";
 
 const products = [
@@ -60,6 +61,7 @@ export function ProductsSection() {
   const common = useTranslations("common");
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -100,7 +102,7 @@ export function ProductsSection() {
               {t("tag")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 break-words overflow-hidden">
-              {t("title")} <span className="gradient-text whitespace-nowrap">{t("titleHighlight")}</span>
+              {t("title")} <span className={useGradient ? 'gradient-text whitespace-nowrap' : 'solid-text whitespace-nowrap'}>{t("titleHighlight")}</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl break-words overflow-hidden">
               {t("subtitle")}
@@ -120,10 +122,10 @@ export function ProductsSection() {
               href={product.link}
               className="group relative bg-card rounded-3xl p-8 shadow-soft hover:shadow-card transition-all duration-300 overflow-hidden hover:-translate-y-1"
             >
-              <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${product.color} opacity-10 blur-3xl group-hover:opacity-20 transition-opacity flex-shrink-0`} />
+              <div className={`absolute top-0 right-0 w-40 h-40 ${useGradient ? `bg-gradient-to-br ${product.color}` : 'bg-primary'} opacity-10 blur-3xl group-hover:opacity-20 transition-opacity flex-shrink-0`} />
               
               <div className="relative z-10 overflow-hidden">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg flex-shrink-0`}>
+                <div className={`w-16 h-16 rounded-2xl ${useGradient ? `bg-gradient-to-br ${product.color}` : 'bg-primary'} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg flex-shrink-0`}>
                   <product.icon className="w-8 h-8 text-primary-foreground flex-shrink-0" />
                 </div>
                 

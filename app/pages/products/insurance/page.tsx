@@ -7,11 +7,13 @@ import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/l
 import { Layout } from "@/app/components/layout/Layout";
 import { Button } from "@/app/components/ui/button";
 import { ArrowRight, Shield, Heart, Car, Plane, Home, Users, CheckCircle, Download } from "lucide-react";
+import { useTheme } from "@/app/context/ThemeContext";
 
 export default function Insurance() {
   const t = useTranslations('insurancePage');
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   const [exchangeRates, setExchangeRates] = useState<Record<string, number>>({});
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
 
@@ -128,7 +130,7 @@ export default function Insurance() {
               {t('tag')}
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words overflow-hidden">
-              {t('title')} <span className="gradient-text">{t('titleHighlight')}</span>
+              {t('title')} <span className={useGradient ? "gradient-text" : "solid-text"}>{t('titleHighlight')}</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 break-words overflow-hidden">
               {t('subtitle')}
@@ -165,7 +167,7 @@ export default function Insurance() {
         <div className="container mx-auto px-4 overflow-hidden">
           <div className="text-center max-w-2xl mx-auto mb-16 overflow-hidden">
             <h2 className="text-3xl font-bold mb-4 break-words overflow-hidden">
-              {t('choose')} <span className="gradient-text">{t('coverage')}</span>
+              {t('choose')} <span className={useGradient ? "gradient-text" : "solid-text"}>{t('coverage')}</span>
             </h2>
             <p className="text-muted-foreground break-words overflow-hidden">
               {t('chooseDesc')}
@@ -179,7 +181,7 @@ export default function Insurance() {
                 className="bg-card rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-card transition-all duration-300 group overflow-hidden"
               >
                 <div className="flex items-start gap-4 mb-6 min-w-0">
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${insurance.color} flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0`}>
+                  <div className={`w-14 h-14 rounded-2xl ${useGradient ? `bg-gradient-to-br ${insurance.color}` : 'solid-primary'} flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0`}>
                     <insurance.icon className="w-7 h-7 text-primary-foreground flex-shrink-0" />
                   </div>
                   <div className="min-w-0">

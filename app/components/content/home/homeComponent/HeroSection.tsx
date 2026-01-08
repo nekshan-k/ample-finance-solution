@@ -5,6 +5,7 @@ import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
 import { useTranslations, useLocale } from 'next-intl';
 import { useCurrency } from '@/app/context/CurrencyContext';
+import { useTheme } from '@/app/context/ThemeContext';
 import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/lib/currency";
 import { useState, useEffect } from "react";
 
@@ -12,6 +13,7 @@ export function HeroSection() {
   const t = useTranslations('hero');
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
   
   useEffect(() => {
@@ -99,7 +101,7 @@ export function HeroSection() {
           <div className="relative animate-scale-in hidden lg:block">
             <div className="relative z-10">
               <div className="relative mx-auto w-[300px]">
-                <div className="absolute inset-0 gradient-primary rounded-[3rem] blur-2xl opacity-30" />
+                <div className={`absolute inset-0 ${useGradient ? 'gradient-primary' : 'solid-primary'} rounded-[3rem] blur-2xl opacity-30`} />
                 <div className="relative bg-card rounded-[3rem] border-8 border-foreground/10 shadow-2xl overflow-hidden">
                   <div className="aspect-[9/19] bg-gradient-to-b from-primary/10 to-background p-4">
                     <div className="flex items-center justify-between mb-6">
@@ -133,7 +135,7 @@ export function HeroSection() {
 
                     <div className="bg-card rounded-xl p-3 shadow-soft">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg gradient-primary" />
+                        <div className={`w-10 h-10 rounded-lg ${useGradient ? 'gradient-primary' : 'solid-primary'}`} />
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-medium text-foreground truncate">{t('mock.fundName')}</p>
                           <p className="text-xs text-muted-foreground truncate">{t('mock.fundType')}</p>

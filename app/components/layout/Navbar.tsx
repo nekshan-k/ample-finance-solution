@@ -13,9 +13,11 @@ import { LanguageSwitcher } from "@/app/components/LanguageSwitcher";
 import { CurrencySwitcher } from "@/app/components/CurrencySwitcher";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/app/components/ui/dropdown-menu";
 import { useTranslations } from 'next-intl';
+import { useTheme } from '@/app/context/ThemeContext';
 
 export const Navbar = memo(function Navbar() {
   const t = useTranslations('nav');
+  const { useGradient } = useTheme();
   
   const navLinks = [
     { name: t('home'), href: "/" },
@@ -94,16 +96,11 @@ export const Navbar = memo(function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image 
-              src="/logo.svg" 
-              alt="Ample Finance Logo" 
-              width={40} 
-              height={40}
-              className="w-10 h-10"
-              priority
-            />
+            <div className={`w-10 h-10 rounded-xl ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center`}>
+              <span className="text-primary-foreground font-bold text-xl">A</span>
+            </div>
             <span className="text-lg font-bold hidden sm:inline">
-              Ample<span className="gradient-text">Finance</span>
+              Ample<span className={useGradient ? "gradient-text" : "solid-text"}>Finance</span>
             </span>
           </Link>
 
@@ -172,7 +169,7 @@ export const Navbar = memo(function Navbar() {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <button className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/15 transition-all duration-200 cursor-pointer outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/20">
-                    <div className="w-8 h-8 rounded-full gradient-primary flex items-center justify-center">
+                    <div className={`w-8 h-8 rounded-full ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center`}>
                       <User className="w-4 h-4 text-white" />
                     </div>
                     <div className="hidden xl:block text-left">
@@ -276,7 +273,7 @@ export const Navbar = memo(function Navbar() {
                       onClick={handleLogout}
                       className="flex items-center gap-3 px-4 py-3 bg-primary/10 rounded-xl hover:bg-primary/15 transition-all duration-200 w-full outline-none focus:outline-none"
                     >
-                      <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
+                      <div className={`w-12 h-12 rounded-full ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center flex-shrink-0`}>
                         <User className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1 min-w-0 text-left">

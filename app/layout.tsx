@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://amplefinance.com",
+    url: "",
     title: "Ample Finance - Smart Investments Made Simple",
     description: "Your trusted partner for smart investments. Mutual funds, insurance, and loans all in one place.",
     siteName: "Ample Finance",
@@ -39,13 +39,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ample Finance - Smart Investments Made Simple",
     description: "Your trusted partner for smart investments. Start investing today.",
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-touch-icon.png',
   },
   manifest: '/manifest.json',
 };

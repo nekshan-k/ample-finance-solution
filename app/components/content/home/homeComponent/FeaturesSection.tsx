@@ -11,9 +11,11 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useTheme } from '@/app/context/ThemeContext';
 
 export function FeaturesSection() {
   const t = useTranslations('features');
+  const { useGradient } = useTheme();
 
   const features = [
     {
@@ -63,7 +65,7 @@ export function FeaturesSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 break-words overflow-hidden">
             {t('title')}{" "}
-            <span className="gradient-text">{t('titleHighlight')}</span>
+            <span className={useGradient ? 'gradient-text' : 'solid-text'}>{t('titleHighlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground break-words overflow-hidden">
             {t('subtitle')}

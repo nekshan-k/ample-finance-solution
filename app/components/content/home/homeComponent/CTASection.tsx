@@ -58,8 +58,8 @@ export function CTASection() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+              variant="gradient"
                 size="xl"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 asChild
               >
                 <Link href="/products">
@@ -69,7 +69,6 @@ export function CTASection() {
               <Button
                 variant="outline"
                 size="xl"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 asChild
               >
                 <Link href="/contact">

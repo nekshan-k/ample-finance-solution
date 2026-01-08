@@ -4,6 +4,7 @@ import { Layout } from "@/app/components/layout/Layout";
 import Link from "next/link";
 import { ArrowRight, TrendingUp, Shield, Heart, Car, Plane, Briefcase, Home, DollarSign } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
+import { useTheme } from "@/app/context/ThemeContext";
 
 const mutualFundCategories = [
   {
@@ -92,12 +93,14 @@ const loanProducts = [
 ];
 
 export default function Products() {
+  const { useGradient } = useTheme();
+  
   return (
     <Layout>
       <section className="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-            Our <span className="gradient-text">Products</span>
+            Our <span className={useGradient ? "gradient-text" : "solid-text"}>Products</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive investment and protection solutions designed to help you 
@@ -177,7 +180,7 @@ export default function Products() {
                 key={product.name}
                 className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1 group"
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div className={`w-12 h-12 rounded-xl ${useGradient ? `bg-gradient-to-br ${product.color}` : 'solid-primary'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <product.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
@@ -214,7 +217,7 @@ export default function Products() {
                 key={product.name}
                 className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1 group"
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div className={`w-12 h-12 rounded-xl ${useGradient ? `bg-gradient-to-br ${product.color}` : 'solid-primary'} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <product.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{product.name}</h3>

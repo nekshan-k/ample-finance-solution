@@ -2,9 +2,11 @@
 
 import { Shield, Award, Lock, BadgeCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useTheme } from '@/app/context/ThemeContext';
 
 export function TrustSection() {
   const t = useTranslations('trust');
+  const { useGradient } = useTheme();
 
   const trustBadges = [
     {
@@ -49,7 +51,7 @@ export function TrustSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 break-words overflow-hidden">
             {t('title')}{" "}
-            <span className="gradient-text">{t('titleHighlight')}</span>
+            <span className={useGradient ? 'gradient-text' : 'solid-text'}>{t('titleHighlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto break-words overflow-hidden">
             {t('subtitle')}

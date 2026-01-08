@@ -2,9 +2,11 @@
 
 import { Star, Quote } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useTheme } from '@/app/context/ThemeContext';
 
 export function TestimonialsSection() {
   const t = useTranslations('testimonials');
+  const { useGradient } = useTheme();
 
   const testimonials = [
     {
@@ -38,7 +40,7 @@ export function TestimonialsSection() {
             {t('tag')}
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 break-words overflow-hidden">
-            {t('title')} <span className="gradient-text whitespace-nowrap">{t('titleHighlight')}</span> {t('titleEnd')}
+            {t('title')} <span className={useGradient ? 'gradient-text whitespace-nowrap' : 'solid-text whitespace-nowrap'}>{t('titleHighlight')}</span> {t('titleEnd')}
           </h2>
           <p className="text-lg text-muted-foreground break-words overflow-hidden">
             {t('subtitle')}
@@ -64,7 +66,7 @@ export function TestimonialsSection() {
               </p>
               
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-semibold flex-shrink-0">
+                <div className={`w-12 h-12 rounded-full ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center text-primary-foreground font-semibold flex-shrink-0`}>
                   {testimonial.avatar}
                 </div>
                 <div className="min-w-0">

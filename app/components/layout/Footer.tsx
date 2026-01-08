@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import { 
   Facebook, 
@@ -11,6 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { useTranslations } from 'next-intl';
+import { useTheme } from '@/app/context/ThemeContext';
 
 const footerLinks = {
   company: [
@@ -48,6 +51,7 @@ const socialLinks = [
 
 export function Footer() {
   const t = useTranslations('footer');
+  const { useGradient } = useTheme();
   
   const footerLinks = {
     company: [
@@ -112,7 +116,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
+              <div className={`w-10 h-10 rounded-xl ${useGradient ? 'gradient-primary' : 'solid-primary'} flex items-center justify-center`}>
                 <span className="text-primary-foreground font-bold text-xl">A</span>
               </div>
               <span className="text-xl font-bold">

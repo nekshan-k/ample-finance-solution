@@ -4,6 +4,7 @@ import { Apple, Play, Star, CheckCircle } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { useTranslations, useLocale } from "next-intl";
 import { useCurrency } from "@/app/context/CurrencyContext";
+import { useTheme } from '@/app/context/ThemeContext';
 import { convertCurrency, formatCurrencyByCode, localeToCurrency } from "@/app/lib/currency";
 import { useState, useEffect } from "react";
 
@@ -11,6 +12,7 @@ export function AppDownloadSection() {
   const t = useTranslations('appDownload');
   const locale = useLocale();
   const { currency } = useCurrency();
+  const { useGradient } = useTheme();
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -97,7 +99,9 @@ export function AppDownloadSection() {
 
           <div className="relative hidden lg:block">
             <div className="relative">
-              <div className="absolute inset-0 gradient-primary rounded-full blur-[100px] opacity-30" />
+              {useGradient && (
+                <div className="absolute inset-0 gradient-primary rounded-full blur-[100px] opacity-30" />
+              )}
               
               <div className="relative mx-auto w-[280px]">
                 <div className="relative bg-background/10 rounded-[3rem] border-4 border-background/20 shadow-2xl overflow-hidden backdrop-blur-xl">
@@ -119,7 +123,7 @@ export function AppDownloadSection() {
                         {[40, 55, 45, 60, 50, 70, 65, 80, 75, 90, 85, 95].map((height, i) => (
                           <div
                             key={i}
-                            className="flex-1 bg-gradient-to-t from-primary to-primary/50 rounded-t"
+                            className={`flex-1 ${useGradient ? 'bg-gradient-to-t from-primary to-primary/50' : 'bg-primary'} rounded-t`}
                             style={{ height: `${height}%` }}
                           />
                         ))}
@@ -133,7 +137,7 @@ export function AppDownloadSection() {
                           className="bg-card rounded-xl p-3 flex items-center justify-between text-foreground min-w-0"
                         >
                           <div className="flex items-center gap-3 min-w-0">
-                            <div className="w-8 h-8 rounded-lg gradient-primary flex-shrink-0" />
+                            <div className={`w-8 h-8 rounded-lg ${useGradient ? 'gradient-primary' : 'solid-primary'} flex-shrink-0`} />
                             <div className="min-w-0">
                               <p className="text-sm font-medium truncate">{holding.name}</p>
                               <p className="text-xs text-muted-foreground break-words">{formatCurrencyByCode(holding.valueInr * conversionRate, currency, locale, 2)}</p>

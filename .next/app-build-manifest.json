@@ -1,29 +1,84 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/css/lib.css",
-      "static/chunks/lib.js",
-      "static/chunks/main-app.js",
-      "static/chunks/commons.js",
-      "static/chunks/app/page.js"
+    "/not-found": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/not-found-3b3c125f8ffda319.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/app/_not-found/page-f84e0197bfcd7935.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/css/lib.css",
-      "static/chunks/lib.js",
-      "static/chunks/main-app.js",
-      "static/chunks/commons.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/css/02e48b6a13400bd0.css",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/layout-11114a65634959f1.js"
     ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/css/lib.css",
-      "static/chunks/lib.js",
-      "static/chunks/main-app.js",
-      "static/chunks/commons.js",
-      "static/chunks/app/not-found.js"
+    "/pages/contact/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/contact/page-28c6b7a9d02393b2.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/page-41f00e357b6697f6.js"
+    ],
+    "/pages/products/insurance/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/products/insurance/page-fa43f151ee24872b.js"
+    ],
+    "/pages/about/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/about/page-aa18c0ae0dc496b0.js"
+    ],
+    "/pages/products/loans/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/products/loans/page-f2e142859de78415.js"
+    ],
+    "/pages/products/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/products/page-29b058c2aeba738e.js"
+    ],
+    "/pages/products/mutual-funds/page": [
+      "static/chunks/webpack-ca39aa49e9b237f2.js",
+      "static/css/aa15fe3776697b1b.css",
+      "static/chunks/lib-16cadd3a8992efaa.js",
+      "static/chunks/main-app-864cfef131808294.js",
+      "static/chunks/commons-eb2396c991d2dd68.js",
+      "static/chunks/app/pages/products/mutual-funds/page-8fe9a2902cc1088f.js"
     ]
   }
 }

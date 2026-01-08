@@ -3,10 +3,10 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme, primaryColors, type PrimaryColor } from '@/app/context/ThemeContext'
-import { Palette, Moon, Sun } from 'lucide-react'
+import { Palette, Moon, Sun, Droplet, Sparkles } from 'lucide-react'
 
 export default function FloatingThemeButton() {
-  const { isDarkMode, primaryColor, setIsDarkMode, setPrimaryColor } = useTheme()
+  const { isDarkMode, primaryColor, colorIntensity, gradientIntensity, useGradient, setIsDarkMode, setPrimaryColor, setColorIntensity, setGradientIntensity, setUseGradient } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
 
   const colorNames: { [key in PrimaryColor]: string } = {
@@ -15,7 +15,13 @@ export default function FloatingThemeButton() {
     emerald: 'Emerald',
     rose: 'Rose',
     amber: 'Amber',
-    cyan: 'Cyan'
+    cyan: 'Cyan',
+    indigo: 'Indigo',
+    pink: 'Pink',
+    teal: 'Teal',
+    orange: 'Orange',
+    red: 'Red',
+    green: 'Green'
   }
 
   const colorEmojis: { [key in PrimaryColor]: string } = {
@@ -24,7 +30,13 @@ export default function FloatingThemeButton() {
     emerald: '💚',
     rose: '🌹',
     amber: '🟡',
-    cyan: '🔷'
+    cyan: '🔷',
+    indigo: '🟦',
+    pink: '💗',
+    teal: '🩵',
+    orange: '🟠',
+    red: '🔴',
+    green: '🟢'
   }
 
   return (
@@ -37,122 +49,187 @@ export default function FloatingThemeButton() {
       >
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
-          whileHover={{ scale: 1.15 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary via-primary to-secondary-500 text-white shadow-2xl flex items-center justify-center group hover:shadow-2xl transition-all duration-300"
+          className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-full text-white shadow-xl flex items-center justify-center ${
+            useGradient ? 'bg-gradient-to-br from-primary via-primary to-secondary-500' : 'bg-primary'
+          }`}
         >
           <motion.div
-            className="absolute inset-0 rounded-full border-2 border-primary/30"
-            animate={{ scale: [1, 1.3, 1], opacity: [1, 0, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-          <motion.div
-            className="absolute inset-0 rounded-full border-2 border-secondary-500/30"
-            animate={{ scale: [1, 1.3, 1], opacity: [1, 0, 1] }}
-            transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
-          />
-
-          <motion.div
-            animate={{ rotate: isOpen ? 360 : 0 }}
-            transition={{ duration: 0.6 }}
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            transition={{ duration: 0.4 }}
             className="relative z-10"
           >
-            <Palette className="w-8 h-8 sm:w-10 sm:h-10 text-white drop-shadow-lg" />
+            <Palette className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-lg" />
           </motion.div>
-          <motion.div
-            className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 to-secondary-500/40 blur-xl"
-            animate={{ opacity: [0.5, 0.8, 0.5] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
         </motion.button>
       </motion.div>
 
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{ duration: 0.3 }}
-            className="fixed right-1 bottom-24 sm:right-6 sm:bottom-28 z-50 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-primary/20 overflow-hidden w-[calc(100vw-1rem)] sm:w-72 lg:w-80 max-w-xs backdrop-blur-xl"
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed right-2 bottom-20 sm:right-6 sm:bottom-28 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-primary/20 w-[calc(100vw-1rem)] sm:w-80 max-w-sm max-h-[calc(100vh-8rem)] overflow-hidden flex flex-col"
           >
-            <div className="p-5 border-b border-primary/10 bg-gradient-to-r from-primary/5 to-transparent">
-              <h3 className="text-xs font-bold text-primary/60 uppercase tracking-wider mb-4">
-                ☀️ Light / Dark Mode
+            <div className={`p-4 border-b border-primary/10 ${useGradient ? 'bg-gradient-to-r from-primary/5 to-transparent' : 'bg-primary/5'}`}>
+              <h3 className="text-xs font-bold text-primary/70 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <Sun className="w-3 h-3" /> Theme Mode
               </h3>
-              <div className="flex gap-3">
+              <div className="flex gap-2">
                 <motion.button
                   onClick={() => setIsDarkMode(false)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
                     !isDarkMode
-                      ? 'bg-gradient-to-r from-primary/30 to-secondary-500/30 border-2 border-primary/50 text-primary'
-                      : 'border-2 border-transparent text-primary/60 hover:text-primary hover:bg-primary/5'
+                      ? `${useGradient ? 'bg-gradient-to-r from-primary/20 to-secondary-500/20' : 'bg-primary/20'} border-2 border-primary/40 text-primary shadow-sm`
+                      : 'border-2 border-transparent text-primary/50 hover:text-primary hover:bg-primary/5'
                   }`}
                 >
-                  <Sun className="w-5 h-5" />
+                  <Sun className="w-4 h-4" />
                   Light
                 </motion.button>
                 <motion.button
                   onClick={() => setIsDarkMode(true)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
                     isDarkMode
-                      ? 'bg-gradient-to-r from-primary/30 to-secondary-500/30 border-2 border-primary/50 text-primary'
-                      : 'border-2 border-transparent text-primary/60 hover:text-primary hover:bg-primary/5'
+                      ? `${useGradient ? 'bg-gradient-to-r from-primary/20 to-secondary-500/20' : 'bg-primary/20'} border-2 border-primary/40 text-primary shadow-sm`
+                      : 'border-2 border-transparent text-primary/50 hover:text-primary hover:bg-primary/5'
                   }`}
                 >
-                  <Moon className="w-5 h-5" />
+                  <Moon className="w-4 h-4" />
                   Dark
                 </motion.button>
               </div>
             </div>
 
-            <div className="p-5">
-              <h3 className="text-xs font-bold text-primary/60 uppercase tracking-wider px-2 mb-4">
-                🌈 Primary Color
+            <div className="p-4 border-b border-primary/10 max-h-[30vh] overflow-y-auto flex-shrink-0">
+              <h3 className="text-xs font-bold text-primary/70 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <Palette className="w-3 h-3" /> Color Palette
               </h3>
-              <div className="space-y-3">
+              <div className="grid grid-cols-3 gap-2">
                 {(Object.keys(colorNames) as PrimaryColor[]).map((c) => (
                   <motion.button
                     key={c}
-                    onClick={() => {
-                      setPrimaryColor(c)
-                      setIsOpen(false)
-                    }}
-                    whileHover={{ x: 6, scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
+                    onClick={() => setPrimaryColor(c)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`flex flex-col items-center gap-1.5 p-2.5 rounded-lg transition-all duration-300 ${
                       primaryColor === c
-                        ? 'bg-gradient-to-r from-primary/20 to-secondary-500/20 border-2 border-primary/50 shadow-lg'
+                        ? `${useGradient ? 'bg-gradient-to-br from-primary/15 to-secondary-500/15' : 'bg-primary/15'} border-2 border-primary/40 shadow-sm`
                         : 'hover:bg-primary/5 border-2 border-transparent'
                     }`}
                   >
-                    <span className="text-2xl">{colorEmojis[c]}</span>
-                    <span className="flex-1 text-left font-semibold">{colorNames[c]}</span>
                     <motion.div
-                      className="w-5 h-5 rounded-full border-3 border-white shadow-md"
+                      className="w-8 h-8 rounded-full shadow-md"
                       style={{
                         backgroundColor: primaryColors[c][500],
                       }}
+                      animate={primaryColor === c ? { scale: [1, 1.1, 1] } : {}}
+                      transition={{ duration: 0.3 }}
                     />
-                    {primaryColor === c && (
-                      <motion.div
-                        layoutId="activeColor"
-                        className="w-3 h-3 rounded-full bg-white dark:bg-slate-900 border-2 border-primary absolute right-4"
-                        transition={{ duration: 0.3 }}
-                      />
-                    )}
+                    <span className="text-xs font-medium">{colorNames[c]}</span>
                   </motion.button>
                 ))}
               </div>
             </div>
 
-            <div className="px-5 py-3 border-t border-primary/10 bg-primary/5">
-              <p className="text-xs text-primary/60 text-center">
-                Changes saved automatically
+            {!useGradient && (
+              <div className="p-4 border-b border-primary/10 flex-shrink-0">
+                <h3 className="text-xs font-bold text-primary/70 uppercase tracking-wider mb-3 flex items-center gap-2">
+                  <Droplet className="w-3 h-3" /> Color Intensity
+                </h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="range"
+                      min="60"
+                      max="140"
+                      value={colorIntensity}
+                      onChange={(e) => setColorIntensity(Number(e.target.value))}
+                      className="flex-1 h-2 bg-primary/10 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:shadow-md [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-primary [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:shadow-md"
+                    />
+                    <span className="text-sm font-semibold text-primary min-w-[3rem] text-right">
+                      {colorIntensity}%
+                    </span>
+                  </div>
+                  <div className="flex justify-between text-xs text-primary/50">
+                    <span>Subtle</span>
+                    <span>Vibrant</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {useGradient && (
+              <div className="p-4 border-b border-primary/10 flex-shrink-0">
+                <h3 className="text-xs font-bold text-primary/70 uppercase tracking-wider mb-3 flex items-center gap-2">
+                  <Sparkles className="w-3 h-3" /> Gradient Intensity
+                </h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <input
+                      type="range"
+                      min="60"
+                      max="140"
+                      value={gradientIntensity}
+                      onChange={(e) => setGradientIntensity(Number(e.target.value))}
+                      className="flex-1 h-2 bg-gradient-to-r from-primary/10 to-secondary-500/10 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-primary [&::-webkit-slider-thumb]:to-secondary-500 [&::-webkit-slider-thumb]:shadow-md [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-primary [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:shadow-md"
+                    />
+                    <span className="text-sm font-semibold text-primary min-w-[3rem] text-right">
+                      {gradientIntensity}%
+                    </span>
+                  </div>
+                  <div className="flex justify-between text-xs text-primary/50">
+                    <span>Soft</span>
+                    <span>Bold</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="p-4 flex-shrink-0">
+              <h3 className="text-xs font-bold text-primary/70 uppercase tracking-wider mb-3 flex items-center gap-2">
+                <Sparkles className="w-3 h-3" /> Style Mode
+              </h3>
+              <div className="flex gap-2">
+                <motion.button
+                  onClick={() => setUseGradient(false)}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className={`flex-1 flex flex-col items-center gap-1.5 p-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
+                    !useGradient
+                      ? 'bg-primary/20 border-2 border-primary/40 text-primary shadow-sm'
+                      : 'border-2 border-transparent text-primary/50 hover:text-primary hover:bg-primary/5'
+                  }`}
+                >
+                  <div className="w-8 h-8 rounded-md" style={{ backgroundColor: primaryColors[primaryColor][500] }} />
+                  Solid
+                </motion.button>
+                <motion.button
+                  onClick={() => setUseGradient(true)}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className={`flex-1 flex flex-col items-center gap-1.5 p-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
+                    useGradient
+                      ? 'bg-gradient-to-r from-primary/20 to-secondary-500/20 border-2 border-primary/40 text-primary shadow-sm'
+                      : 'border-2 border-transparent text-primary/50 hover:text-primary hover:bg-primary/5'
+                  }`}
+                >
+                  <div className="w-8 h-8 rounded-md bg-gradient-to-br from-primary to-secondary-500" />
+                  Gradient
+                </motion.button>
+              </div>
+            </div>
+
+            <div className="px-4 py-2.5 border-t border-primary/10 bg-primary/5 flex-shrink-0">
+              <p className="text-[10px] text-primary/50 text-center">
+                ✨ Changes applied instantly
               </p>
             </div>
           </motion.div>
@@ -165,8 +242,8 @@ export default function FloatingThemeButton() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-30"
+            transition={{ duration: 0.15 }}
+            className="fixed inset-0 z-30 bg-black/20 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
         )}

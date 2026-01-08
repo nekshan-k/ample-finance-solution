@@ -4,6 +4,7 @@ import { ReactNode, memo } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import dynamic from "next/dynamic";
+import { useDynamicFavicon } from "@/app/hooks/useDynamicFavicon";
 
 const FloatingThemeButton = dynamic(() => import("@/app/components/FloatingThemeButton"), {
   ssr: false,
@@ -15,6 +16,8 @@ interface LayoutProps {
 }
 
 export const Layout = memo(function Layout({ children }: LayoutProps) {
+  useDynamicFavicon();
+  
   return (
     <div className="min-h-screen overflow-hidden flex flex-col">
       <Navbar />
