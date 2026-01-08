@@ -7,7 +7,6 @@ import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/app/components/ui/input
 import { useAuth } from '@/app/context/AuthContext';
 import { toast } from 'sonner';
 import PhoneInput from 'react-phone-input-2';
-// @ts-ignore - CSS import without type declarations
 import 'react-phone-input-2/lib/style.css';
 
 interface LoginModalProps {

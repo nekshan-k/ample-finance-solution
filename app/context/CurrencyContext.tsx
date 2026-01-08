@@ -18,7 +18,6 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
   const [currency, setCurrencyState] = useState<CurrencyCode>(DEFAULT_CURRENCY);
 
   useEffect(() => {
-    // Get currency from cookie on mount
     const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
       const [key, value] = cookie.split('=');
       acc[key] = value;
@@ -31,7 +30,6 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
 
   const setCurrency = (newCurrency: CurrencyCode) => {
     setCurrencyState(newCurrency);
-    // Save to cookie (persistent across page reloads)
     document.cookie = `${CURRENCY_COOKIE_NAME}=${newCurrency}; path=/; max-age=31536000; SameSite=Lax`;
   };
 

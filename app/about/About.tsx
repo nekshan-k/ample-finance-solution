@@ -52,7 +52,6 @@ export function About() {
   const { currency } = useCurrency();
   const locale = useLocale();
 
-  // Convert 500 Crores (5 billion) INR to selected currency
   const assetsInINR = 5000000000;
   const assetsConverted = formatCurrencyByCode(assetsInINR, currency, locale, 0);
   

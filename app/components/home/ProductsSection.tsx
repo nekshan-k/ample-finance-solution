@@ -62,7 +62,6 @@ export function ProductsSection() {
   const { currency } = useCurrency();
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
 
-  // Load exchange rates on mount and when currency changes
   useEffect(() => {
     const loadRates = async () => {
       try {

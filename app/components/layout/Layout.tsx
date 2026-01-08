@@ -5,7 +5,6 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import dynamic from "next/dynamic";
 
-// Lazy load FloatingThemeButton as it's not critical for initial render
 const FloatingThemeButton = dynamic(() => import("@/app/components/FloatingThemeButton"), {
   ssr: false,
   loading: () => null,

@@ -20,7 +20,6 @@ export const SIPCalculator = memo(function SIPCalculator() {
   const locale = useLocale();
   const { currency } = useCurrency();
   
-  // Base amounts in INR
   const BASE_MONTHLY_INR = 27500;
   const MIN_MONTHLY_INR = 500;
   const MAX_MONTHLY_INR = 100000;
@@ -30,7 +29,6 @@ export const SIPCalculator = memo(function SIPCalculator() {
   const [timePeriod, setTimePeriod] = useState(10);
   const [conversionRates, setConversionRates] = useState<Record<string, number>>({});
 
-  // Load exchange rates on mount and when currency changes
   useEffect(() => {
     const loadRates = async () => {
       try {
@@ -71,7 +69,6 @@ export const SIPCalculator = memo(function SIPCalculator() {
     };
   }, [monthlyInvestment, expectedReturn, timePeriod]);
 
-  // Convert all display values to selected currency
   const conversionRate = conversionRates[currency] ?? 1;
   const displayMonthly = monthlyInvestment * conversionRate;
   const displayFutureValue = calculations.futureValue * conversionRate;

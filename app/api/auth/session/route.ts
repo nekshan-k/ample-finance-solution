@@ -12,7 +12,6 @@ export async function GET(request: NextRequest) {
     const token = cookieStore.get('auth-token')?.value;
 
     if (!token) {
-      // Return a 200 with an explicit unauthenticated state to avoid noisy 401 logs in dev
       return NextResponse.json(
         { success: false, user: null, authenticated: false },
         { status: 200 }
@@ -27,7 +26,6 @@ export async function GET(request: NextRequest) {
       user: payload.user,
     });
   } catch (error) {
-    // Invalid or expired token — treat as unauthenticated without error status
     return NextResponse.json(
       { success: false, user: null, authenticated: false },
       { status: 200 }
